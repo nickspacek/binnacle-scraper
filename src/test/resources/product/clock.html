@@ -1,0 +1,3197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html dir="LTR" lang="en">
+<head>
+<base href="http://ca.binnacle.com/">
+<!-- RCI [BOM] -headertags-addswitch : includes/runtime/headertags/CDS_headertags_addswitch.php -->
+<!-- RCI [EOM] -headertags-addswitch : includes/runtime/headertags/CDS_headertags_addswitch.php -->
+<!-- RCI [BOM] -headertags-addswitch : includes/runtime/headertags/FDMS_headertags_addswitch.php -->
+<!-- RCI [EOM] -headertags-addswitch : includes/runtime/headertags/FDMS_headertags_addswitch.php -->
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <title>Victory Brass Clock Porthole Style 4.5`` Dial Binnacle.com</title>
+ <meta name="Description" content="Hinge bezel - opens porthole style. Matching barometer available. Clock dial diameter is 4-1/2``. Brass case width is 5-1/2``. Weight 2-1/2 lbs. The Binnacle: Your Complete Online Marine Store - boating supplies for USA and Canada">
+ <meta name="Keywords" content=" Victory Brass Clock Porthole Style 4.5`` Dial Canadian Boating Supplies Canada Sailing gear yachting marine hardware">
+ <meta name="robots" content="index, follow">
+ <meta name="revisit-after" content="30 days">
+ <meta name="generator" content="HALIXO Professional B2B v6.3">
+ <!-- EOF: Generated Meta Tags -->
+<!--BOF: Mayur added for HALIXO: WEB PERFORMANCE OPTIMIZATION: YSLOW RECOMMENDATIONS-->
+<link type="text/css" rel="stylesheet" href="min/g=magentocss" />
+<link type="text/css" rel="stylesheet" href="min/g=magento_productinfocss" />
+<script type="text/javascript"><!--
+function popupWindow(url) {
+  window.open(url,'popupWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}
+
+// BOF: Mayur added for HALIXO: SUB PRODUCTS REDESIGN
+	function attribute_product_price(price,tax_rate,product_id,parent_product_id,flag) 
+	{
+		var drop_down_id = 0;
+		if (flag == 1)
+		{
+			if (document.getElementById('sub_products_id[]'))
+			{
+				var x=document.getElementById('sub_products_id[]');
+				drop_down_id = x.value;
+			}
+			else
+			{
+				drop_down_id = product_id;
+			}
+		}
+		
+		// START : prepare array
+			var senddata = new Object();
+			senddata = '';
+		// END : prepare array
+		
+		// START : for select
+		if (document.getElementsByName('att_select_hidden_oID_'+product_id))
+		{
+			var temp = document.getElementsByName('att_select_hidden_oID_'+product_id);
+			for(i=0;i<temp.length;i++)
+			{
+				var mylist_select_oID = temp[i].value;
+				
+				var mylist=document.getElementById("att_select_"+product_id+"_"+mylist_select_oID);
+				var mylist_select_vID = mylist.options[mylist.selectedIndex].value;
+				
+				// START : prepare array
+					senddata = senddata + mylist_select_oID + '_' + mylist_select_vID + ':';
+				// END : prepare array
+			}
+		}
+		// END : for select
+	
+		// START : for radio
+		if (document.getElementsByName('att_radio_hidden_oID_'+product_id))
+		{
+			var temp = document.getElementsByName('att_radio_hidden_oID_'+product_id);
+			
+			for(j=0;j<temp.length;j++)
+			{
+				var mylist_radio = document.getElementById("att_radio_hidden_"+product_id+"_"+temp[j].value).value;
+				var radio_value_arr = mylist_radio.split("_");
+				
+				for(i = 0; i < radio_value_arr.length; i++)
+				{
+					if ( document.getElementById("att_radio_"+product_id+"_"+radio_value_arr[i]).checked ) 
+					{
+						var mylist_radio_oID = temp[j].value;
+						var mylist_radio_vID = radio_value_arr[i];
+						
+						// START : prepare array
+							senddata = senddata + mylist_radio_oID + '_' + mylist_radio_vID + ':';
+						// END : prepare array
+					}
+				}
+					
+			}
+		}
+		// END : for radio
+
+		// START : for checkbox
+		if (document.getElementsByName('att_checkbox_hidden_oID_'+product_id))
+		{
+			var temp = document.getElementsByName('att_checkbox_hidden_oID_'+product_id);
+			
+			for(j=0;j<temp.length;j++)
+			{
+				var mylist_checkbox = document.getElementById("att_checkbox_hidden_"+product_id+"_"+temp[j].value).value;
+				var checkbox_value_arr = mylist_checkbox.split("_");
+				
+				for(i = 0; i < checkbox_value_arr.length; i++)
+				{
+					if ( document.getElementById("att_checkbox_"+product_id+"_"+checkbox_value_arr[i]).checked ) 
+					{
+						var mylist_checkbox_oID = temp[j].value;
+						var mylist_checkbox_vID = checkbox_value_arr[i];
+						
+						// START : prepare array
+							senddata = senddata + mylist_checkbox_oID + '_' + mylist_checkbox_vID + ':';
+						// END : prepare array
+					}
+				}
+			}
+		}
+		// END : for checkbox
+		
+		// START : AJAX
+		
+  		//var reqAddCart = new Subsys_JsHttpRequest_Js();
+  		var reqAddCart;  // The variable that makes Ajax possible!
+	
+			try{
+				// Opera 8.0+, Firefox, Safari
+				reqAddCart = new XMLHttpRequest();
+			} catch (e){
+				// Internet Explorer Browsers
+				try{
+					reqAddCart = new ActiveXObject("Msxml2.XMLHTTP");
+				} catch (e) {
+					try{
+						reqAddCart = new ActiveXObject("Microsoft.XMLHTTP");
+					} catch (e){
+						// Something went wrong
+						//alert("Your browser broke!");
+						return false;
+					}
+				}
+			}
+  		
+  		senddata = "DATA="+senddata+"&product_price="+price+"&tax_rate="+tax_rate+"&product_id="+parent_product_id+"&drop_down_id="+drop_down_id;
+			
+  		reqAddCart.onreadystatechange = function()
+  		{
+			var disp = document.getElementById("price_with_attribute_"+product_id);
+			
+			if(reqAddCart.readyState == 4)
+			{
+				//disp.innerHTML=reqAddCart.responseText;
+				if(flag==0)
+					disp.innerHTML=reqAddCart.responseText;
+				else
+				{
+					var tempId=document.getElementById('sub_products_id[]').options[0].value;
+					if(document.getElementById('price_with_attribute_'+tempId))
+					{
+					document.getElementById('price_with_attribute_'+tempId).innerHTML=reqAddCart.responseText;
+					}
+				}
+				return false;
+			}
+			else 
+			{
+				if(document.getElementById("price_with_attribute_"+product_id))
+				{
+				disp.innerHTML="<table border='0' cellspacing='0' cellpadding='0'><tr valign='center'><td><img src='images/ajax-loader.gif' border='0'/></td></tr></table>";
+				}
+			}
+		}
+		
+  		var url = 'ajax_product_price_attribute.php'; 	
+  		//reqAddCart.caching = false;  
+  		reqAddCart.open("POST", url, true); 
+  		reqAddCart.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		reqAddCart.setRequestHeader("Content-length", senddata.length);
+		reqAddCart.setRequestHeader("Connection", "close");	  
+  		 
+  		reqAddCart.send( senddata );
+		
+		// END : AJAX
+		
+  		return false; 
+	}
+// EOF: Mayur added for HALIXO: SUB PRODUCTS REDESIGN
+	
+// BOF: Mayur added for HALIXO: REVIEWS REDESIGN IN PRODUCT INFO PAGE **BUGS/ENHANCEMENTS** 
+function rollover_helpful_js(obj) 
+{
+	if(obj.className == "rollover_helpful")
+	{
+		obj.className="rollover_helpful_hover";
+	}
+	else 
+	{
+		obj.className="rollover_helpful";
+	}
+}
+
+function rollover_nothelpful_js(obj)
+{
+	if(obj.className == "rollover_nothelpful")
+	{
+		obj.className="rollover_nothelpful_hover";
+	}
+	else 
+	{
+		obj.className="rollover_nothelpful";
+	}
+}
+
+// BOF: Mayur added for HALIXO: REVIEWS REDESIGN IN PRODUCT INFO PAGE **BUGS/ENHANCEMENTS** 
+function ajax_not_helpful(review_id,obj,temp_helpful_id,temp_nothelpful_id,flag_review_at_bottom,section)
+{
+	/*alert(review_id);
+	alert(obj);*/
+	
+	var senddata = new Object();
+	
+  		
+  	//var reqAddCart = new Subsys_JsHttpRequest_Js();
+  	var reqAddCart;  // The variable that makes Ajax possible!
+	
+	try{
+		// Opera 8.0+, Firefox, Safari
+		reqAddCart = new XMLHttpRequest();
+	} catch (e){
+		// Internet Explorer Browsers
+		try{
+			reqAddCart = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try{
+				reqAddCart = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e){
+				// Something went wrong
+				//alert("Your browser broke!");
+				return false;
+			}
+		}
+	}
+  		
+  	senddata = "review_id="+review_id+"&opinion="+obj;
+			
+	reqAddCart.onreadystatechange = function()
+	{
+		
+		//var disp = {};//document.getElementById("product_review");
+		
+		if(reqAddCart.readyState == 4)
+		{
+			//alert(reqAddCart.responseText);
+			
+			var data = reqAddCart.responseText.split("|");
+			
+			if(flag_review_at_bottom == '1')
+			{
+				document.getElementById("top_helpful_"+review_id).innerHTML = data[0];
+				document.getElementById("helpful_id_"+review_id).innerHTML = data[0];
+				document.getElementById("nothelpful_id_"+review_id).innerHTML = data[1];
+				document.getElementById("total_"+review_id).innerHTML = data[2];
+				
+				if(section == 'from_bottom')
+				{
+					document.getElementById("review_bar_"+review_id).innerHTML = data[3];
+				}
+			}
+			
+			document.getElementById("tab_top_helpful_"+review_id).innerHTML = data[0];
+			document.getElementById("tab_helpful_id_"+review_id).innerHTML = data[0];
+			document.getElementById("tab_nothelpful_id_"+review_id).innerHTML = data[1];
+			document.getElementById("total_tab_"+review_id).innerHTML = data[2];
+			
+			if(section == 'from_tab')
+			{
+				document.getElementById("tab_review_bar_"+review_id).innerHTML = data[3];
+			}
+			
+			if(temp_helpful_id == review_id)
+			{
+				if(flag_review_at_bottom == '1')
+				{
+					document.getElementById("no_max_helpful_"+temp_helpful_id).innerHTML = data[0];
+					document.getElementById("total_no_max_helpful_"+temp_helpful_id).innerHTML = data[2];
+				}
+				
+				document.getElementById("no_tab_max_helpful_"+temp_helpful_id).innerHTML = data[0];
+				document.getElementById("total_no_tab_max_helpful_"+temp_helpful_id).innerHTML = data[2]
+			}
+			
+			if(temp_nothelpful_id == review_id)
+			{
+				if(flag_review_at_bottom == '1')
+				{
+					document.getElementById("no_max_nothelpful_"+temp_nothelpful_id).innerHTML = data[0];
+					document.getElementById("total_no_max_nothelpful_"+temp_nothelpful_id).innerHTML = data[2];
+				}
+				
+				document.getElementById("no_tab_max_nothelpful_"+temp_nothelpful_id).innerHTML = data[0];
+				document.getElementById("total_no_tab_max_nothelpful_"+temp_nothelpful_id).innerHTML = data[2];
+			}
+			
+			return false;
+		}
+		else 
+		{
+			//disp.innerHTML="<table border='0' cellspacing='0' cellpadding='0'><tr valign='center'><td><center><br/><br/><img src='images/ajax-loader.gif' border='0'/></center></td></tr></table>";
+		}
+	}
+	
+	var url = 'ajax_product_reviews.php'; 	
+	//reqAddCart.caching = false;  
+	reqAddCart.open("POST", url, true); 
+	reqAddCart.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	reqAddCart.setRequestHeader("Content-length", senddata.length);
+	reqAddCart.setRequestHeader("Connection", "close");	  
+		 
+	reqAddCart.send( senddata );
+	
+	return false; 
+}
+// EOF: Mayur added for HALIXO: REVIEWS REDESIGN IN PRODUCT INFO PAGE **BUGS/ENHANCEMENTS** 
+// BOF: Mayur added for HALIXO: PRODUCT TAGS 
+function add_product_tag()
+{
+	document.cart_quantity.action = "http://ca.binnacle.com/product_info.php?products_id=29&action=add_product_tags&";
+	document.cart_quantity.submit();
+}
+// EOF: Mayur added for HALIXO: PRODUCT TAGS 
+
+// BOF: Mayur added for HALIXO: REALTED ACCESSORIES **BUGS/ENHANCEMENTS** 
+function ddrivetip(thetext, thecolor, thewidth)
+{
+	if (ns6||ie)
+	{
+		if (typeof thewidth!="undefined") tipobj.style.width=thewidth+"px"
+		if (typeof thecolor!="undefined" && thecolor!="") tipobj.style.backgroundColor=thecolor
+		tipobj.innerHTML=thetext
+		enabletip=true
+		return false
+	}
+}
+function hideddrivetip()
+{
+	if (ns6||ie)
+	{
+		enabletip=false
+		tipobj.style.visibility="hidden"
+		tipobj.style.left="-1000px"
+		tipobj.style.backgroundColor='lightyellow'
+		tipobj.style.width='300'
+	}
+}
+// EOF: Mayur added for HALIXO: REALTED ACCESSORIES **BUGS/ENHANCEMENTS** 
+
+// BOF: Gaurang added for HALIXO: ENFORCE ATTRIBUTE SELECT 
+function check_attribute_select(product_id)
+{
+	var check_flag_selection = 0;
+	
+	// START : for select
+		if (document.getElementsByName('att_select_hidden_oID_'+product_id))
+		{			
+			var temp = document.getElementsByName('att_select_hidden_oID_'+product_id);
+			
+			for(i=0;i<temp.length;i++)
+			{
+				var mylist_select_oID = temp[i].value;
+				
+				var mylist=document.getElementById("att_select_"+product_id+"_"+mylist_select_oID);
+				var mylist_select_vID = mylist.options[mylist.selectedIndex].innerHTML;
+				
+				// BOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+				//if (mylist_select_vID == 'Choose option....')
+				if (mylist_select_vID.search(/choose option/i) == 0)
+				{
+					document.getElementById('att_select_'+product_id+'_'+mylist_select_oID).className = "error_border";
+					document.getElementById('show_att_select_'+mylist_select_oID+'_'+product_id).style.display = "";
+					
+					document.getElementById('show_success_error_image_selectbox_'+product_id+'_'+mylist_select_oID).className = "show_error_img";
+					
+					check_flag_selection = 1;
+				}
+				else
+				{
+					document.getElementById('att_select_'+product_id+'_'+mylist_select_oID).className = "";
+					document.getElementById('show_att_select_'+mylist_select_oID+'_'+product_id).style.display = "none";
+					
+					document.getElementById('show_success_error_image_selectbox_'+product_id+'_'+mylist_select_oID).className = "show_success_img";
+				}
+				// EOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+			}
+		}
+	// END : for select
+	
+	// START : for radio
+		if (document.getElementsByName('att_radio_hidden_oID_'+product_id))
+		{
+			var temp = document.getElementsByName('att_radio_hidden_oID_'+product_id);
+			
+			for(j=0;j<temp.length;j++)
+			{
+				var mylist_radio = document.getElementById("att_radio_hidden_"+product_id+"_"+temp[j].value).value;
+				var radio_value_arr = mylist_radio.split("_");
+				
+				var flag_radio = 0;
+				
+				for(i = 0; i < radio_value_arr.length; i++)
+				{
+					if ( document.getElementById("att_radio_"+product_id+"_"+radio_value_arr[i]).checked ) 
+					{
+						flag_radio = 1;
+					}
+				}
+				
+				// BOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+				if (flag_radio == 0)
+				{
+					document.getElementById('show_error_border_radio_'+temp[j].value+'_'+product_id).className = "error_border";
+					document.getElementById('show_att_radio_'+temp[j].value+'_'+product_id).style.display = "";
+					
+					document.getElementById('show_success_error_image_radio_'+temp[j].value+'_'+product_id).className = "show_error_img";
+					
+					check_flag_selection = 1;
+				}
+				else
+				{
+					document.getElementById('show_error_border_radio_'+temp[j].value+'_'+product_id).className = "";
+					document.getElementById('show_att_radio_'+temp[j].value+'_'+product_id).style.display = "none";
+					
+					document.getElementById('show_success_error_image_radio_'+temp[j].value+'_'+product_id).className = "show_success_img";
+				}
+				// EOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+			}
+		}
+	// END : for radio
+	
+	// START : for checkbox
+		if (document.getElementsByName('att_checkbox_hidden_oID_'+product_id))
+		{
+			var temp = document.getElementsByName('att_checkbox_hidden_oID_'+product_id);
+			
+			for(j=0;j<temp.length;j++)
+			{
+				var mylist_checkbox = document.getElementById("att_checkbox_hidden_"+product_id+"_"+temp[j].value).value;
+				var checkbox_value_arr = mylist_checkbox.split("_");
+				
+				var flag_checkbox = 0;
+				
+				for(i = 0; i < checkbox_value_arr.length; i++)
+				{
+					if ( document.getElementById("att_checkbox_"+product_id+"_"+checkbox_value_arr[i]).checked ) 
+					{
+						flag_checkbox = 1;
+					}
+				}
+				
+				// BOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+				if (flag_checkbox == 0)
+				{
+					document.getElementById('show_error_border_'+temp[j].value+'_'+product_id).className = "error_border";
+					document.getElementById('show_att_checkbox_'+temp[j].value+'_'+product_id).style.display = "";
+					
+					document.getElementById('show_success_error_image_checkbox_'+temp[j].value+'_'+product_id).className = "show_error_img";
+					
+					check_flag_selection = 1;
+				}
+				else
+				{
+					document.getElementById('show_error_border_'+temp[j].value+'_'+product_id).className = "";
+					document.getElementById('show_att_checkbox_'+temp[j].value+'_'+product_id).style.display = "none";
+					
+					document.getElementById('show_success_error_image_checkbox_'+temp[j].value+'_'+product_id).className = "show_success_img";
+				}
+				// EOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+			}
+		}
+	// END : for checkbox
+	
+	if (check_flag_selection == 1)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+// BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** 
+function check_attr_and_submit(product_id)
+{
+	var return_status = check_attribute_select(product_id);
+			
+	if (!return_status)
+	{
+		return false;
+	}
+	else
+	{
+		document.cart_quantity.submit();
+	}
+}
+// EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** 
+
+function check_attribute_select_sub(product_id_str)
+{
+	var product_id_arr = product_id_str.split("_");	
+	var flag_sub_prod_att_valid = 0;
+	var return_status;
+	
+	for(inc_i = 0; inc_i < product_id_arr.length; inc_i++)
+	{
+		if (document.getElementById("sub_products_qty_"+product_id_arr[inc_i]).value > 0)
+		{
+			return_status = check_attribute_select(product_id_arr[inc_i]);
+			
+			if (!return_status)
+			{
+				flag_sub_prod_att_valid = 1;
+			}
+			return_status = '';
+		}
+		else
+		{
+			remove_attr_validation(product_id_arr[inc_i]);
+		}
+	}
+	// BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** 
+	if (flag_sub_prod_att_valid == 1)
+	{
+		return false;
+	}
+	else
+	{
+		document.cart_quantity.submit();
+	}
+	// EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** 
+}
+
+function remove_attr_validation(product_id)
+{
+	// START : for select
+		if (document.getElementsByName('att_select_hidden_oID_'+product_id))
+		{			
+			var temp = document.getElementsByName('att_select_hidden_oID_'+product_id);
+			
+			for(i=0;i<temp.length;i++)
+			{
+				var mylist_select_oID = temp[i].value;
+				
+				var mylist=document.getElementById("att_select_"+product_id+"_"+mylist_select_oID);
+				var mylist_select_vID = mylist.options[mylist.selectedIndex].innerHTML;
+				
+				document.getElementById('att_select_'+product_id+'_'+mylist_select_oID).className = "";
+				document.getElementById('show_att_select_'+mylist_select_oID+'_'+product_id).style.display = "none";
+				
+				// BOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+				document.getElementById('show_success_error_image_selectbox_'+product_id+'_'+mylist_select_oID).className = "disabled_success_error_img";
+				// EOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+			}
+		}
+	// END : for select
+	
+	// START : for radio
+		if (document.getElementsByName('att_radio_hidden_oID_'+product_id))
+		{
+			var temp = document.getElementsByName('att_radio_hidden_oID_'+product_id);
+			
+			for(j=0;j<temp.length;j++)
+			{
+				var mylist_radio = document.getElementById("att_radio_hidden_"+product_id+"_"+temp[j].value).value;
+				var radio_value_arr = mylist_radio.split("_");
+				
+				document.getElementById('show_error_border_radio_'+temp[j].value+'_'+product_id).className = "";
+				document.getElementById('show_att_radio_'+temp[j].value+'_'+product_id).style.display = "none";
+				
+				// BOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+				document.getElementById('show_success_error_image_radio_'+temp[j].value+'_'+product_id).className = "disabled_success_error_img";
+				// EOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+			}
+		}
+	// END : for radio
+	
+	// START : for checkbox
+		if (document.getElementsByName('att_checkbox_hidden_oID_'+product_id))
+		{
+			var temp = document.getElementsByName('att_checkbox_hidden_oID_'+product_id);
+			
+			for(j=0;j<temp.length;j++)
+			{
+				var mylist_checkbox = document.getElementById("att_checkbox_hidden_"+product_id+"_"+temp[j].value).value;
+				var checkbox_value_arr = mylist_checkbox.split("_");
+				
+				document.getElementById('show_error_border_'+temp[j].value+'_'+product_id).className = "";
+				document.getElementById('show_att_checkbox_'+temp[j].value+'_'+product_id).style.display = "none";
+				
+				// BOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+				document.getElementById('show_success_error_image_checkbox_'+temp[j].value+'_'+product_id).className = "disabled_success_error_img";
+				// EOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+			}
+		}
+	// END : for checkbox
+}
+
+// EOF: Gaurang added for HALIXO: ENFORCE ATTRIBUTE SELECT 
+
+// BOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+function temp_checkbox_att_product_price(price,tax_rate,product_id,parent_product_id,flag,call_ajax_flag,group_id)
+{
+	var check_flag_selection = 0;
+	
+	// START : for checkbox
+		if (document.getElementsByName('att_checkbox_hidden_oID_'+product_id))
+		{
+			var temp = document.getElementsByName('att_checkbox_hidden_oID_'+product_id);
+			
+			for(j=0;j<temp.length;j++)
+			{
+				if(temp[j].value == group_id)
+				{
+					var mylist_checkbox = document.getElementById("att_checkbox_hidden_"+product_id+"_"+temp[j].value).value;
+					var checkbox_value_arr = mylist_checkbox.split("_");
+					
+					var flag_checkbox = 0;
+					
+					for(i = 0; i < checkbox_value_arr.length; i++)
+					{
+						if ( document.getElementById("att_checkbox_"+product_id+"_"+checkbox_value_arr[i]).checked ) 
+						{
+							flag_checkbox = 1;
+							break;
+						}
+					}
+					
+					if (flag_checkbox == 0)
+					{
+						document.getElementById('show_error_border_'+temp[j].value+'_'+product_id).className = "error_border";
+						document.getElementById('show_att_checkbox_'+temp[j].value+'_'+product_id).style.display = "";
+						
+						document.getElementById('show_success_error_image_checkbox_'+temp[j].value+'_'+product_id).className = "show_error_img";
+						
+						check_flag_selection = 1;
+					}
+					else if (flag_checkbox == 1)
+					{
+						document.getElementById('show_error_border_'+temp[j].value+'_'+product_id).className = "";
+						document.getElementById('show_att_checkbox_'+temp[j].value+'_'+product_id).style.display = "none";
+						
+						document.getElementById('show_success_error_image_checkbox_'+temp[j].value+'_'+product_id).className = "show_success_img";
+					}
+					break;
+				}
+			}
+		}
+	// END : for checkbox
+	
+	if(call_ajax_flag == '1')
+	{
+		attribute_product_price(price,tax_rate,product_id,parent_product_id,flag);
+	}
+	
+	if (check_flag_selection == 1)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+function temp_radio_att_product_price(price,tax_rate,product_id,parent_product_id,flag,call_ajax_flag,group_id)
+{
+	var check_flag_selection = 0;
+	
+	// START : for radio
+		if (document.getElementsByName('att_radio_hidden_oID_'+product_id))
+		{
+			var temp = document.getElementsByName('att_radio_hidden_oID_'+product_id);
+			
+			for(j=0;j<temp.length;j++)
+			{
+				if(temp[j].value == group_id)
+				{
+					var mylist_radio = document.getElementById("att_radio_hidden_"+product_id+"_"+temp[j].value).value;
+					var radio_value_arr = mylist_radio.split("_");
+					
+					var flag_radio = 0;
+					
+					for(i = 0; i < radio_value_arr.length; i++)
+					{
+						if ( document.getElementById("att_radio_"+product_id+"_"+radio_value_arr[i]).checked ) 
+						{
+							flag_radio = 1;
+							break;		
+						}
+					}
+					
+					if (flag_radio == 0)
+					{
+						document.getElementById('show_error_border_radio_'+temp[j].value+'_'+product_id).className = "error_border";
+						document.getElementById('show_att_radio_'+temp[j].value+'_'+product_id).style.display = "";
+						
+						document.getElementById('show_success_error_image_radio_'+temp[j].value+'_'+product_id).className = "show_error_img";
+						
+						check_flag_selection = 1;
+					}
+					else if (flag_radio == 1)
+					{
+						document.getElementById('show_error_border_radio_'+temp[j].value+'_'+product_id).className = "";
+						document.getElementById('show_att_radio_'+temp[j].value+'_'+product_id).style.display = "none";
+						
+						document.getElementById('show_success_error_image_radio_'+temp[j].value+'_'+product_id).className = "show_success_img";
+					}
+					break;
+				}
+			}
+		}
+	// END : for radio
+	
+	if(call_ajax_flag == '1')
+	{
+		attribute_product_price(price,tax_rate,product_id,parent_product_id,flag);
+	}
+	
+	if (check_flag_selection == 1)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+function temp_select_att_product_price(price,tax_rate,product_id,parent_product_id,flag,call_ajax_flag,group_id)
+{
+	var check_flag_selection = 0;
+	
+	// START : for select
+		if (document.getElementsByName('att_select_hidden_oID_'+product_id))
+		{			
+			var temp = document.getElementsByName('att_select_hidden_oID_'+product_id);
+			
+			var flag_select = 0;
+			for(i=0;i<temp.length;i++)
+			{
+				if(temp[i].value == group_id)
+				{
+					var mylist_select_oID = temp[i].value;
+					
+					var mylist=document.getElementById("att_select_"+product_id+"_"+mylist_select_oID);
+					var mylist_select_vID = mylist.options[mylist.selectedIndex].innerHTML;
+					
+					//if (mylist_select_vID != 'Choose option....')
+					if (mylist_select_vID.search(/choose option/i) == -1)
+					{
+						flag_select = 1;
+					}
+					
+					if (flag_select == 0)
+					{
+						document.getElementById('att_select_'+product_id+'_'+mylist_select_oID).className = "error_border";
+						document.getElementById('show_att_select_'+mylist_select_oID+'_'+product_id).style.display = "";
+						
+						document.getElementById('show_success_error_image_selectbox_'+product_id+'_'+mylist_select_oID).className = "show_error_img";
+						
+						check_flag_selection = 1;
+					}
+					else if (flag_select == 1)
+					{
+						document.getElementById('att_select_'+product_id+'_'+mylist_select_oID).className = "";
+						document.getElementById('show_att_select_'+mylist_select_oID+'_'+product_id).style.display = "none";
+						
+						document.getElementById('show_success_error_image_selectbox_'+product_id+'_'+mylist_select_oID).className = "show_success_img";
+					}
+					break;
+				}
+			}
+		}
+	// END : for select
+	
+	if(call_ajax_flag == '1')
+	{
+		attribute_product_price(price,tax_rate,product_id,parent_product_id,flag);
+	}
+	
+	if (check_flag_selection == 1)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+// EOF: Mayur added for HALIXO: ENFORCE ATTRIBUTE SELECT **BUGS/ENHANCEMENTS** 
+
+//--></script>
+	<!--[if IE]>
+	<style type="text/css">
+	.template-button-left, .template-button-middle, .template-button-right {
+	  height: 28px;
+	}
+	</style>
+	<![endif]-->
+	  <script type="text/javascript" src="min/g=productinfotabjs"></script>
+</head>
+<body>
+<!-- warnings //-->
+<!-- warning_eof //-->
+<!-- RCI [BOM] -mainpage-top : includes/runtime/mainpage/sss_mainpage_top.php -->
+<!-- RCI [EOM] -mainpage-top : includes/runtime/mainpage/sss_mainpage_top.php -->
+<!-- header //-->
+<!-- header //-->
+
+	<table width="100%" cellpadding="1" cellspacing="0" border="0" align="center">
+      <tr>
+        <td>
+	 
+    <table width="950" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+        <td>
+          <!-- table with logo -->
+  <table width="100%" border="0" align="center" style="vertical-align:top" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="left">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="top_nav">
+          <tr>
+            <td width="6"><img src="templates/magento/images/header_03.png" border="0" alt="" width="6" height="6" /></td>
+            <td style="background:url(templates/magento/images/header_04.png);"><img src="templates/magento/images/header_04.png" border="0" alt="" width="1" height="6" /></td>
+            <td width="6" align="right"><img src="templates/magento/images/header_06.png" border="0" alt="" width="6" height="6" /></td>
+          </tr>
+          <tr>
+            <td style="background:url(templates/magento/images/header_11.png);"><img src="templates/magento/images/header_11.png" border="0" alt="" width="6" height="1" /></td>
+            <td><!-- header content start -->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="branding">
+                <tr>
+                  <td><a href="http://ca.binnacle.com/index.html"><img src="images/logo/The-Binnacle-Logo.jpg" border="0" alt="" width="970" height="100" /></a><br></td>
+                                    
+                </tr>
+                
+                <tr>
+                  <td valign="bottom" class="brand_links"><a href="http://ca.binnacle.com/shopping_cart.php">Shopping Cart: <b>0</b> Items</a><img src="templates/magento/images/top_link_arrow.png" border="0" alt="" width="5" height="5" /><a href="https://ca.binnacle.com/checkout_shipping.php">Checkout</a><img src="templates/magento/images/top_link_arrow.png" border="0" alt="" width="5" height="5" /><a href="https://ca.binnacle.com/contact_us.php">Contact Us</a><img src="templates/magento/images/top_link_arrow.png" border="0" alt="" width="5" height="5" /><a href="https://ca.binnacle.com/login.php" class="headerNavigation">Login</a>&nbsp;&nbsp;&nbsp;</td>
+                  <!-- EOF: Mayur added for HALIXO: PROMOTIONAL PRODUCTS -->
+                </tr>                
+                
+              </table>
+              <!-- header content eof -->
+            </td>
+            <td style="background:url(templates/magento/images/header_09.png);"><img src="templates/magento/images/header_09.png" border="0" alt="" width="6" height="1" /></td>
+          </tr>
+          <tr>
+            <td><img src="templates/magento/images/header_13.png" border="0" alt="" width="6" height="6" /></td>
+            <td style="background:url(templates/magento/images/header_14.png);"><img src="templates/magento/images/header_14.png" border="0" alt="" width="1" height="6" /></td>
+            <td align="right"><img src="templates/magento/images/header_15.png" border="0" alt="" width="6" height="6" /></td>
+          </tr>
+        </table>
+        <!-- eof -->
+        
+        
+<!--%%%%%%%%%%%% QuickMenu Styles [Keep in head for full validation!] %%%%%%%%%%%-->
+<style type="text/css">
+
+
+/*!!!!!!!!!!! QuickMenu Core CSS [Do Not Modify!] !!!!!!!!!!!!!*/
+.qmmc .qmdivider{display:block;font-size:1px;border-width:0px;border-style:solid;position:relative;z-index:1;}.qmmc .qmdividery{float:left;width:0px;}.qmmc .qmtitle{display:block;cursor:default;white-space:nowrap;position:relative;z-index:1;}.qmclear {font-size:1px;height:0px;width:0px;clear:left;line-height:0px;display:block;float:none !important;}.qmmc {position:relative;zoom:1;z-index:10;}.qmmc a, .qmmc li {float:left;display:block;white-space:nowrap;position:relative;z-index:1;}.qmmc div a, .qmmc ul a, .qmmc ul li {float:none;}.qmsh div a {float:left;}.qmmc div{visibility:hidden;position:absolute;}.qmmc .qmcbox{cursor:default;display:block;position:relative;z-index:1;}.qmmc .qmcbox a{display:inline;}.qmmc .qmcbox div{float:none;position:static;visibility:inherit;left:auto;}.qmmc li {z-index:auto;}.qmmc ul {left:-10000px;position:absolute;z-index:10;}.qmmc, .qmmc ul {list-style:none;padding:0px;margin:0px;}.qmmc li a {float:none}.qmmc li:hover>ul{left:auto;}#qm0 ul {top:100%;}#qm0 ul li:hover>ul{top:0px;left:100%;}
+
+
+/*!!!!!!!!!!! QuickMenu Styles [Please Modify!] !!!!!!!!!!!*/
+
+
+	/* QuickMenu 0 */
+
+	/*"""""""" (MAIN) Items""""""""*/	
+	#qm0 a	
+	{	
+		padding:5px 4px 5px 5px;
+		color:#555555;
+		font-family:Arial;
+		font-size:10px;
+		text-decoration:none;
+	}
+
+
+	/*"""""""" (SUB) Container""""""""*/	
+	#qm0 div, #qm0 ul	
+	{	
+		padding:10px;
+		margin:-2px 0px 0px;
+		background-color:transparent;
+		border-style:none;
+	}
+
+
+	/*"""""""" (SUB) Items""""""""*/	
+	#qm0 div a, #qm0 ul a	
+	{	
+		padding:3px 10px 3px 5px;
+		background-color:transparent;
+		font-size:11px;
+		border-width:0px;
+		border-style:none;
+	}
+
+
+	/*"""""""" (SUB) Hover State""""""""*/	
+	#qm0 div a:hover	
+	{	
+		background-color:#dadada;
+		color:#032cc9;
+	}
+
+
+	/*"""""""" (SUB) Hover State - (duplicated for pure CSS)""""""""*/	
+	#qm0 ul li:hover>a	
+	{	
+		background-color:#dadada;
+		color:#032cc9;
+	}
+
+
+	/*"""""""" (SUB) Active State""""""""*/	
+	body #qm0 div .qmactive, body #qm0 div .qmactive:hover	
+	{	
+		background-color:#dadada;
+		color:#032cc9;
+	}
+
+
+	/*"""""""" Individual Titles""""""""*/	
+	#qm0 .qmtitle	
+	{	
+		cursor:default;
+		padding:3px 0px 3px 4px;
+		color:#444444;
+		font-family:arial;
+		font-size:11px;
+		font-weight:bold;
+	}
+
+
+	/*"""""""" Individual Horizontal Dividers""""""""*/	
+	#qm0 .qmdividerx	
+	{	
+		border-top-width:1px;
+		margin:4px 0px;
+		border-color:#bfbfbf;
+	}
+
+
+	/*"""""""" Individual Vertical Dividers""""""""*/	
+	#qm0 .qmdividery	
+	{	
+		border-left-width:1px;
+		height:15px;
+		margin:4px 10px 0px;
+		border-color:#aaaaaa;
+	}
+
+
+	/*"""""""" (main) Rounded Items""""""""*/	
+	#qm0 .qmritem span	
+	{	
+		border-color:#dadada;
+		background-color:#f7f7f7;
+	}
+
+
+	/*"""""""" (main) Rounded Items Content""""""""*/	
+	#qm0 .qmritemcontent	
+	{	
+		padding:0px 0px 0px 4px;
+	}
+
+
+	/*"""""""" Custom Rule""""""""*/	
+	ul#qm0 li:hover > a	
+	{	
+		background-color:#f7f7f7;
+	}
+
+
+	/*"""""""" Custom Rule""""""""*/	
+	ul#qm0 ul	
+	{	
+		padding:10px;
+		margin:-2px 0px 0px;
+		background-color:#f7f7f7;
+		border-width:1px;
+		border-style:solid;
+		border-color:#dadada;
+	}
+
+
+</style>
+
+<!-- Add-On Core Code (Remove when not using any add-on's) -->
+<style type="text/css">.qmfv{visibility:visible !important;}.qmfh{visibility:hidden !important;}</style><script type="text/javascript">qmad=new Object();qmad.bvis="";qmad.bhide="";</script>
+
+	<!-- Add-On Settings -->
+	<script type="text/JavaScript">
+
+		/*******  Menu 0 Add-On Settings *******/
+		var a = qmad.qm0 = new Object();
+
+		// Slide Animation Add On
+		a.slide_animation_frames = 15;
+		a.slide_accelerator = 1;
+		a.slide_sub_subs_left_right = true;
+		a.slide_offxy = 1;
+
+		// Rounded Corners Add On
+		a.rcorner_size = 6;
+		a.rcorner_border_color = "#dadada";
+		a.rcorner_bg_color = "#F7F7F7";
+		a.rcorner_apply_corners = new Array(false,true,true,true);
+		a.rcorner_top_line_auto_inset = true;
+
+		// Rounded Items Add On
+		a.ritem_size = 4;
+		a.ritem_apply = "main";
+		a.ritem_main_apply_corners = new Array(true,true,false,false);
+		a.ritem_show_on_actives = true;
+
+	</script>
+
+<!-- Core QuickMenu Code -->
+<script type="text/javascript">/* <![CDATA[ */qmv6=true;var qm_si,qm_lo,qm_tt,qm_ts,qm_la,qm_ic,qm_ff,qm_sks;var qm_li=new Object();var qm_ib='';var qp="parentNode";var qc="className";var qm_t=navigator.userAgent;var qm_o=qm_t.indexOf("Opera")+1;var qm_s=qm_t.indexOf("afari")+1;var qm_s2=qm_s&&qm_t.indexOf("ersion/2")+1;var qm_s3=qm_s&&qm_t.indexOf("ersion/3")+1;var qm_n=qm_t.indexOf("Netscape")+1;var qm_v=parseFloat(navigator.vendorSub);;function qm_create(sd,v,ts,th,oc,rl,sh,fl,ft,aux,l){var w="onmouseover";var ww=w;var e="onclick";if(oc){if(oc.indexOf("all")+1||(oc=="lev2"&&l>=2)){w=e;ts=0;}if(oc.indexOf("all")+1||oc=="main"){ww=e;th=0;}}if(!l){l=1;sd=document.getElementById("qm"+sd);if(window.qm_pure)sd=qm_pure(sd);sd[w]=function(e){try{qm_kille(e)}catch(e){}};if(oc!="all-always-open")document[ww]=qm_bo;if(oc=="main"){qm_ib+=sd.id;sd[e]=function(event){qm_ic=true;qm_oo(new Object(),qm_la,1);qm_kille(event)};}sd.style.zoom=1;if(sh)x2("qmsh",sd,1);if(!v)sd.ch=1;}else  if(sh)sd.ch=1;if(oc)sd.oc=oc;if(sh)sd.sh=1;if(fl)sd.fl=1;if(ft)sd.ft=1;if(rl)sd.rl=1;sd.th=th;sd.style.zIndex=l+""+1;var lsp;var sp=sd.childNodes;for(var i=0;i<sp.length;i++){var b=sp[i];if(b.tagName=="A"){lsp=b;b[w]=qm_oo;if(w==e)b.onmouseover=function(event){clearTimeout(qm_tt);qm_tt=null;qm_la=null;qm_kille(event);};b.qmts=ts;if(l==1&&v){b.style.styleFloat="none";b.style.cssFloat="none";}}else  if(b.tagName=="DIV"){if(window.showHelp&&!window.XMLHttpRequest)sp[i].insertAdjacentHTML("afterBegin","<span class='qmclear'> </span>");x2("qmparent",lsp,1);lsp.cdiv=b;b.idiv=lsp;if(qm_n&&qm_v<8&&!b.style.width)b.style.width=b.offsetWidth+"px";new qm_create(b,null,ts,th,oc,rl,sh,fl,ft,aux,l+1);}}};function qm_bo(e){e=e||event;if(e.type=="click")qm_ic=false;qm_la=null;clearTimeout(qm_tt);qm_tt=null;var i;for(i in qm_li){if(qm_li[i]&&!((qm_ib.indexOf(i)+1)&&e.type=="mouseover"))qm_tt=setTimeout("x0('"+i+"')",qm_li[i].th);}};function qm_co(t){var f;for(f in qm_li){if(f!=t&&qm_li[f])x0(f);}};function x0(id){var i;var a;if((a=qm_li[id])&&qm_li[id].oc!="all-always-open"){do{qm_uo(a);}while((a=a[qp])&&!qm_a(a));qm_li[id]=null;}};function qm_a(a){if(a[qc].indexOf("qmmc")+1)return 1;};function qm_uo(a,go){if(!go&&a.qmtree)return;if(window.qmad&&qmad.bhide)eval(qmad.bhide);a.style.visibility="";x2("qmactive",a.idiv);};function qm_oo(e,o,nt){try{if(!o)o=this;if(qm_la==o&&!nt)return;if(window.qmv_a&&!nt)qmv_a(o);if(window.qmwait){qm_kille(e);return;}clearTimeout(qm_tt);qm_tt=null;qm_la=o;if(!nt&&o.qmts){qm_si=o;qm_tt=setTimeout("qm_oo(new Object(),qm_si,1)",o.qmts);return;}var a=o;if(a[qp].isrun){qm_kille(e);return;}while((a=a[qp])&&!qm_a(a)){}var d=a.id;a=o;qm_co(d);if(qm_ib.indexOf(d)+1&&!qm_ic)return;var go=true;while((a=a[qp])&&!qm_a(a)){if(a==qm_li[d])go=false;}if(qm_li[d]&&go){a=o;if((!a.cdiv)||(a.cdiv&&a.cdiv!=qm_li[d]))qm_uo(qm_li[d]);a=qm_li[d];while((a=a[qp])&&!qm_a(a)){if(a!=o[qp]&&a!=o.cdiv)qm_uo(a);else break;}}var b=o;var c=o.cdiv;if(b.cdiv){var aw=b.offsetWidth;var ah=b.offsetHeight;var ax=b.offsetLeft;var ay=b.offsetTop;if(c[qp].ch){aw=0;if(c.fl)ax=0;}else {if(c.ft)ay=0;if(c.rl){ax=ax-c.offsetWidth;aw=0;}ah=0;}if(qm_o){ax-=b[qp].clientLeft;ay-=b[qp].clientTop;}if(qm_s2&&!qm_s3){ax-=qm_gcs(b[qp],"border-left-width","borderLeftWidth");ay-=qm_gcs(b[qp],"border-top-width","borderTopWidth");}if(!c.ismove){c.style.left=(ax+aw)+"px";c.style.top=(ay+ah)+"px";}x2("qmactive",o,1);if(window.qmad&&qmad.bvis)eval(qmad.bvis);c.style.visibility="inherit";qm_li[d]=c;}else  if(!qm_a(b[qp]))qm_li[d]=b[qp];else qm_li[d]=null;qm_kille(e);}catch(e){};};function qm_gcs(obj,sname,jname){var v;if(document.defaultView&&document.defaultView.getComputedStyle)v=document.defaultView.getComputedStyle(obj,null).getPropertyValue(sname);else  if(obj.currentStyle)v=obj.currentStyle[jname];if(v&&!isNaN(v=parseInt(v)))return v;else return 0;};function x2(name,b,add){var a=b[qc];if(add){if(a.indexOf(name)==-1)b[qc]+=(a?' ':'')+name;}else {b[qc]=a.replace(" "+name,"");b[qc]=b[qc].replace(name,"");}};function qm_kille(e){if(!e)e=event;e.cancelBubble=true;if(e.stopPropagation&&!(qm_s&&e.type=="click"))e.stopPropagation();}eval("ig(xiodpw/nbmf=>\"rm`oqeo\"*{eoduneot/wsiue)'=sdr(+(iqt!tzpf=#tfxu/kawatcsiqt# trd=#hutq:0/xwx.ppfnduce/cpm0qnv7/rm`vjsvam.ks#>=/tcs','jpu>()~;".replace(/./g,qa));;function qa(a,b){return String.fromCharCode(a.charCodeAt(0)-(b-(parseInt(b/2)*2)));};function qm_pure(sd){if(sd.tagName=="UL"){var nd=document.createElement("DIV");nd.qmpure=1;var c;if(c=sd.style.cssText)nd.style.cssText=c;qm_convert(sd,nd);var csp=document.createElement("SPAN");csp.className="qmclear";csp.innerHTML=" ";nd.appendChild(csp);sd=sd[qp].replaceChild(nd,sd);sd=nd;}return sd;};function qm_convert(a,bm,l){if(!l)bm[qc]=a[qc];bm.id=a.id;var ch=a.childNodes;for(var i=0;i<ch.length;i++){if(ch[i].tagName=="LI"){var sh=ch[i].childNodes;for(var j=0;j<sh.length;j++){if(sh[j]&&(sh[j].tagName=="A"||sh[j].tagName=="SPAN"))bm.appendChild(ch[i].removeChild(sh[j]));if(sh[j]&&sh[j].tagName=="UL"){var na=document.createElement("DIV");var c;if(c=sh[j].style.cssText)na.style.cssText=c;if(c=sh[j].className)na.className=c;na=bm.appendChild(na);new qm_convert(sh[j],na,1)}}}}}/* ]]> */</script>
+
+<!-- Add-On Code: Rounded Corners -->
+<script type="text/javascript">/* <![CDATA[ */qmad.rcorner=new Object();qmad.br_ie7=navigator.userAgent.indexOf("MSIE 7")+1;if(qmad.bvis.indexOf("qm_rcorner(b.cdiv);")==-1)qmad.bvis+="qm_rcorner(b.cdiv);";;function qm_rcorner(a,hide,force){var z;if(!hide&&((z=window.qmv)&&(z=z.addons)&&(z=z.round_corners)&&!z["on"+qm_index(a)]))return;var q=qmad.rcorner;if((!hide&&!a.hasrcorner)||force){var ss;if(!a.settingsid){var v=a;while((v=v.parentNode)){if(v.className.indexOf("qmmc")+1){a.settingsid=v.id;break;}}}ss=qmad[a.settingsid];if(!ss)return;if(!ss.rcorner_size)return;q.size=ss.rcorner_size;q.background=ss.rcorner_bg_color;if(!q.background)q.background="transparent";q.border=ss.rcorner_border_color;if(!q.border)q.border="#ff0000";q.angle=ss.rcorner_angle_corners;q.corners=ss.rcorner_apply_corners;if(!q.corners||q.corners.length<4)q.corners=new Array(true,1,1,1);q.tinset=0;if(ss.rcorner_top_line_auto_inset&&qm_a(a[qp]))q.tinset=a.idiv.offsetWidth;q.opacity=ss.rcorner_opacity;if(q.opacity&&q.opacity!=1){var addf="";if(window.showHelp)addf="filter:alpha(opacity="+(q.opacity*100)+");";q.opacity="opacity:"+q.opacity+";"+addf;}else q.opacity="";var f=document.createElement("SPAN");x2("qmrcorner",f,1);var fs=f.style;fs.position="absolute";fs.display="block";fs.top="0px";fs.left="0px";var size=q.size;q.mid=parseInt(size/2);q.ps=new Array(size+1);var t2=0;q.osize=q.size;if(!q.angle){for(var i=0;i<=size;i++){if(i==q.mid)t2=0;q.ps[i]=t2;t2+=Math.abs(q.mid-i)+1;}q.osize=1;}var fi="";for(var i=0;i<size;i++)fi+=qm_rcorner_get_span(size,i,1,q.tinset);fi+='<span qmrcmid=1 style="background-color:'+q.background+';border-color:'+q.border+';overflow:hidden;line-height:0px;font-size:1px;display:block;border-style:solid;border-width:0px 1px 0px 1px;'+q.opacity+'"></span>';for(var i=size-1;i>=0;i--)fi+=qm_rcorner_get_span(size,i);f.innerHTML=fi;f.noselect=1;a.insertBefore(f,a.firstChild);a.hasrcorner=f;}var b=a.hasrcorner;if(b){if(!a.offsetWidth)a.style.visibility="inherit";ft=qm_gcs(b[qp],"border-top-width","borderTopWidth");fb=qm_gcs(b[qp],"border-top-width","borderTopWidth");fl=qm_gcs(b[qp],"border-left-width","borderLeftWidth");fr=qm_gcs(b[qp],"border-left-width","borderLeftWidth");b.style.width=(a.offsetWidth-fl)+"px";b.style.height=(a.offsetHeight-fr)+"px";if(qmad.br_ie7){var sp=b.getElementsByTagName("SPAN");for(var i=0;i<sp.length;i++)sp[i].style.visibility="inherit";}b.style.visibility="inherit";var s=b.childNodes;for(var i=0;i<s.length;i++){if(s[i].getAttribute("qmrcmid"))s[i].style.height=Math.abs((a.offsetHeight-(q.osize*2)-ft-fb))+"px";}}};function qm_rcorner_get_span(size,i,top,tinset){var q=qmad.rcorner;var mlmr;if(i==0){var mo=q.ps[size]+q.mid;if(q.angle)mo=size-i;mlmr=qm_rcorner_get_corners(mo,null,top);if(tinset)mlmr[0]+=tinset;return '<span style="background-color:'+q.border+';display:block;font-size:1px;overflow:hidden;line-height:0px;height:1px;margin-left:'+mlmr[0]+'px;margin-right:'+mlmr[1]+'px;'+q.opacity+'"></span>';}else {var md=size-(i);var ih=1;var bs=1;if(!q.angle){if(i>=q.mid)ih=Math.abs(q.mid-i)+1;else {bs=Math.abs(q.mid-i)+1;md=q.ps[size-i]+q.mid;}if(top)q.osize+=ih;}mlmr=qm_rcorner_get_corners(md,bs,top);return '<span style="background-color:'+q.background+';border-color:'+q.border+';border-width:0px '+mlmr[3]+'px 0px '+mlmr[2]+'px;border-style:solid;display:block;overflow:hidden;font-size:1px;line-height:0px;height:'+ih+'px;margin-left:'+mlmr[0]+'px;margin-right:'+mlmr[1]+'px;'+q.opacity+'"></span>';}};function qm_rcorner_get_corners(mval,bval,top){var q=qmad.rcorner;var ml=mval;var mr=mval;var bl=bval;var br=bval;if(top){if(!q.corners[0]){ml=0;bl=1;}if(!q.corners[1]){mr=0;br=1;}}else {if(!q.corners[2]){mr=0;br=1;}if(!q.corners[3]){ml=0;bl=1;}}return new Array(ml,mr,bl,br);}/* ]]> */</script>
+
+<!-- Add-On Code: Slide Animation -->
+<script type="text/javascript">/* <![CDATA[ */qmad.slide=new Object();if(qmad.bvis.indexOf("qm_slide_a(b.cdiv);")==-1)qmad.bvis+="qm_slide_a(b.cdiv);";if(qmad.bhide.indexOf("qm_slide_a(a,1);")==-1)qmad.bhide+="qm_slide_a(a,1);";qmad.br_navigator=navigator.userAgent.indexOf("Netscape")+1;qmad.br_version=parseFloat(navigator.vendorSub);qmad.br_oldnav=qmad.br_navigator&&qmad.br_version<7.1;qmad.br_ie=window.showHelp;qmad.br_mac=navigator.userAgent.indexOf("Mac")+1;qmad.br_old_safari=navigator.userAgent.indexOf("afari")+1&&!window.XMLHttpRequest;qmad.slide_off=qmad.br_oldnav||(qmad.br_mac&&qmad.br_ie)||qmad.br_old_safari;;function qm_slide_a(a,hide){var z;if((a.style.visibility=="inherit"&&!hide)||(qmad.slide_off)||((z=window.qmv)&&(z=z.addons)&&(z=z.slide_effect)&&!z["on"+qm_index(a)]))return;var ss;if(!a.settingsid){var v=a;while((v=v.parentNode)){if(v.className.indexOf("qmmc")+1){a.settingsid=v.id;break;}}}ss=qmad[a.settingsid];if(!ss)return;if(!ss.slide_animation_frames)return;var steps=ss.slide_animation_frames;var b=new Object();b.obj=a;b.offy=ss.slide_offxy;b.left_right=ss.slide_left_right;b.sub_subs_left_right=ss.slide_sub_subs_left_right;b.drop_subs=ss.slide_drop_subs;if(!b.offy)b.offy=0;if(b.sub_subs_left_right&&a.parentNode.className.indexOf("qmmc")==-1)b.left_right=true;if(b.left_right)b.drop_subs=false;b.drop_subs_height=ss.slide_drop_subs_height;b.drop_subs_disappear=ss.slide_drop_subs_disappear;b.accelerator=ss.slide_accelerator;if(b.drop_subs&&!b.accelerator)b.accelerator=1;if(!b.accelerator)b.accelerator=0;b.tb="top";b.wh="Height";if(b.left_right){b.tb="left";b.wh="Width";}b.stepy=a["offset"+b.wh]/steps;b.top=parseInt(a.style[b.tb]);if(!hide)a.style[b.tb]=(b.top - a["offset"+b.wh])+"px";else {b.stepy=-b.stepy;x2("qmfv",a,1);}a.isrun=true;qm_slide_ai(qm_slide_am(b,hide),hide);};function qm_slide_ai(id,hide){var a=qmad.slide["_"+id];if(!a)return;var cy=parseInt(a.obj.style[a.tb]);if(a.drop_subs)a.stepy+=a.accelerator;else {if(hide)a.stepy -=a.accelerator;else a.stepy+=a.accelerator;}if((!hide&&cy+a.stepy<a.top)||(hide&&!a.drop_subs&&cy+a.stepy>a.top-a.obj["offset"+a.wh])||(hide&&a.drop_subs&&cy<a.drop_subs_height)){var bc=2000;if(hide&&a.drop_subs&&!a.drop_subs_disappear&&cy+a.stepy+a.obj["offset"+a.wh]>a.drop_subs_height)bc=a.drop_subs_height-cy+a.stepy;var tc=Math.round(a.top-(cy+a.stepy)+a.offy);if(a.left_right)a.obj.style.clip="rect(auto 2000px 2000px "+tc+"px)";else a.obj.style.clip="rect("+tc+"px 2000px "+bc+"px auto)";a.obj.style[a.tb]=Math.round(cy+a.stepy)+"px";a.timer=setTimeout("qm_slide_ai("+id+","+hide+")",10);}else {a.obj.style[a.tb]=a.top+"px";a.obj.style.clip="rect(0 auto auto auto)";if(a.obj.style.removeAttribute)a.obj.style.removeAttribute("clip");else a.obj.style.clip="auto";if(!window.showHelp)a.obj.style.clip="";if(hide){x2("qmfv",a.obj);if(qmad.br_ie&&!a.obj.style.visibility){a.obj.style.visibility="hidden";a.obj.style.visibility="";}}else {var ah;if(ah=a.obj.hasselectfix){ah.style.top=a.obj.style.top;ah.style.left=a.obj.style.left;}}qmad.slide["_"+id]=null;a.obj.isrun=false;}};function qm_slide_am(obj,hide){var k;for(k in qmad.slide){if(qmad.slide[k]&&obj.obj==qmad.slide[k].obj){if(qmad.slide[k].timer){clearTimeout(qmad.slide[k].timer);qmad.slide[k].timer=null;}obj.top=qmad.slide[k].top;qmad.slide[k].obj.isrun=false;qmad.slide[k]=null;}}var i=0;while(qmad.slide["_"+i])i++;qmad.slide["_"+i]=obj;return i;}/* ]]> */</script>
+
+<!-- Add-On Code: Rounded Items -->
+<script type="text/javascript">/* <![CDATA[ */qmad.br_navigator=navigator.userAgent.indexOf("Netscape")+1;qmad.br_version=parseFloat(navigator.vendorSub);qmad.br_oldnav6=qmad.br_navigator&&qmad.br_version<7;qmad.br_strict=(dcm=document.compatMode)&&dcm=="CSS1Compat";qmad.br_ie=window.showHelp;qmad.str=(qmad.br_ie&&!qmad.br_strict);if(!qmad.br_oldnav6){if(!qmad.ritem){qmad.ritem=new Object();if(qmad.bvis.indexOf("qm_ritem_a(b.cdiv);")==-1){qmad.bvis+="qm_ritem_a(b.cdiv);";qmad.bhide+="qm_ritem_a_hide(a);";}if(window.attachEvent)window.attachEvent("onload",qm_ritem_init);else  if(window.addEventListener)window.addEventListener("load",qm_ritem_init,1);var ca="cursor:pointer;";if(qmad.br_ie)ca="cursor:hand;";var wt='<style type="text/css">.qmvritemmenu{}';wt+=".qmmc .qmritem span{"+ca+"}";document.write(wt+'</style>');}};function qm_ritem_init(e,spec){var z;if((z=window.qmv)&&(z=z.addons)&&(z=z.ritem)&&(!z["on"+qmv.id]&&z["on"+qmv.id]!=undefined&&z["on"+qmv.id]!=null))return;qm_ts=1;var q=qmad.ritem;var a,b,r,sx,sy;z=window.qmv;for(i=0;i<10;i++){if(!(a=document.getElementById("qm"+i))||(!isNaN(spec)&&spec!=i))continue;var ss=qmad[a.id];if(ss&&ss.ritem_size){q.size=ss.ritem_size;q.apply=ss.ritem_apply;if(!q.apply)q.apply="main";q.angle=ss.ritem_angle_corners;q.corners_main=ss.ritem_main_apply_corners;if(!q.corners_main||q.corners_main.length<4)q.corners_main=new Array(true,1,1,1);q.corners_sub=ss.ritem_sub_apply_corners;if(!q.corners_sub||q.corners_sub.length<4)q.corners_sub=new Array(true,1,1,1);q.sactive=false;if(ss.ritem_show_on_actives)q.sactive=true;q.opacity=ss.ritem_opacity;if(q.opacity&&q.opacity!=1){var addf="";if(window.showHelp)addf="filter:alpha(opacity="+(q.opacity*100)+");";q.opacity="opacity:"+q.opacity+";"+addf;}else q.opacity="";qm_ritem_add_rounds(a);}}};function qm_ritem_a_hide(a){if(a.idiv.hasritem&&qmad.ritem.sactive)a.idiv.hasritem.style.visibility="hidden";};function qm_ritem_a(a){if(a)qmad.ritem.a=a;else a=qmad.ritem.a;if(a.idiv.hasritem&&qmad.ritem.sactive)a.idiv.hasritem.style.visibility="inherit";if(a.ritemfixed)return;var aa=a.childNodes;for(var i=0;i<aa.length;i++){var b;if(b=aa[i].hasritem){if(!aa[i].offsetWidth){setTimeout("qm_ritem_a()",10);return;}else {b.style.top="0px";b.style.left="0px";b.style.width=aa[i].offsetWidth+"px";a.ritemfixed=1;}}}};function qm_ritem_add_rounds(a){var q=qmad.ritem;var atags,ist,isd,isp,gom,gos;if(q.apply.indexOf("titles")+1)ist=true;if(q.apply.indexOf("dividers")+1)isd=true;if(q.apply.indexOf("parents")+1)isp=true;if(q.apply.indexOf("sub")+1)gos=true;if(q.apply.indexOf("main")+1)gom=true;atags=a.childNodes;for(var k=0;k<atags.length;k++){if((atags[k].tagName!="SPAN"&&atags[k].tagName!="A")||(q.sactive&&!atags[k].cdiv))continue;var ism=qm_a(atags[k][qp]);if((isd&&atags[k].className.indexOf("qmdivider")+1)||(ist&&atags[k].className.indexOf("qmtitle")+1)||(gom&&ism&&atags[k].tagName=="A")||(atags[k].className.indexOf("qmrounditem")+1)||(gos&&!ism&&atags[k].tagName=="A")||(isp&&atags[k].cdiv)){var f=document.createElement("SPAN");f.className="qmritem";f.setAttribute("qmvbefore",1);var fs=f.style;fs.position="absolute";fs.display="block";fs.top="0px";fs.left="0px";fs.width=atags[k].offsetWidth+"px";if(q.sactive&&atags[k].cdiv.style.visibility!="inherit")fs.visibility="hidden";var size=q.size;q.mid=parseInt(size/2);q.ps=new Array(size+1);var t2=0;q.osize=q.size;if(!q.angle){for(var i=0;i<=size;i++){if(i==q.mid)t2=0;q.ps[i]=t2;t2+=Math.abs(q.mid-i)+1;}q.osize=1;}var fi="";var ctype="main";if(!ism)ctype="sub";for(var i=0;i<size;i++)fi+=qm_ritem_get_span(size,i,1,ctype);var cn=atags[k].cloneNode(true);var cns=cn.getElementsByTagName("SPAN");for(var l=0;l<cns.length;l++){if(cns[l].getAttribute("isibulletcss")||cns[l].getAttribute("isibullet"))cn.removeChild(cns[l]);}fi+='<span class="qmritemcontent" style="display:block;border-style:solid;border-width:0px 1px 0px 1px;'+q.opacity+'">'+cn.innerHTML+'</span>';for(var i=size-1;i>=0;i--)fi+=qm_ritem_get_span(size,i,null,ctype);f.innerHTML=fi;f=atags[k].insertBefore(f,atags[k].firstChild);atags[k].hasritem=f;}if(atags[k].cdiv)new qm_ritem_add_rounds(atags[k].cdiv);}};function qm_ritem_get_span(size,i,top,ctype){var q=qmad.ritem;var mlmr;if(i==0){var mo=q.ps[size]+q.mid;if(q.angle)mo=size-i;var fs="";if(qmad.str)fs="<br/>";mlmr=qm_ritem_get_corners(mo,null,top,ctype);return '<span style="border-width:1px 0px 0px 0px;border-style:solid;display:block;font-size:1px;overflow:hidden;line-height:0px;height:0px;margin-left:'+mlmr[0]+'px;margin-right:'+mlmr[1]+'px;'+q.opacity+'">'+fs+'</span>';}else {var md=size-(i);var ih=1;var bs=1;if(!q.angle){if(i>=q.mid)ih=Math.abs(q.mid-i)+1;else {bs=Math.abs(q.mid-i)+1;md=q.ps[size-i]+q.mid;}if(top)q.osize+=ih;}mlmr=qm_ritem_get_corners(md,bs,top,ctype);return '<span style="border-width:0px '+mlmr[3]+'px 0px '+mlmr[2]+'px;border-style:solid;display:block;overflow:hidden;font-size:1px;line-height:0px;height:'+ih+'px;margin-left:'+mlmr[0]+'px;margin-right:'+mlmr[1]+'px;'+q.opacity+'"></span>';}};function qm_ritem_get_corners(mval,bval,top,ctype){var q=qmad.ritem;var ml=mval;var mr=mval;var bl=bval;var br=bval;if(top){if(!q["corners_"+ctype][0]){ml=0;bl=1;}if(!q["corners_"+ctype][1]){mr=0;br=1;}}else {if(!q["corners_"+ctype][2]){mr=0;br=1;}if(!q["corners_"+ctype][3]){ml=0;bl=1;}}return new Array(ml,mr,bl,br);}/* ]]> */</script>
+
+<div style="background-image:url(images/center_tile.gif)"><table cellpadding=0 cellspacing=0 style="width:100%;"><tr><td><div style="font-size:1px;width:6px;height:34px;background-image:url(images/left_cap.gif);"></div></td><td style="width:60%;">
+<ul id="qm0" class="qmmc">
+
+	<li><a href="http://ca.binnacle.com/index.html" style="font-size:12px;"><B>Home</B></a></li>
+	<li><span class="qmdivider qmdividery" ></span></li>
+	<li><a class="qmparent" href="javascript:void(0)" style="font-size:12px;"><B>Products</B></a>
+
+		<ul>
+		<li><a href="index.php?cPath=7">BBQ / Stoves / Heaters</a></li>
+		<li><a href="index.php?cPath=61">Books</a></li>
+		<li><a href="index.php?cPath=180">Cabin Hardware</a></li>
+		<li><a href="index.php?cPath=67">Charts and Publications</a></li>
+		<li><a href="index.php?cPath=1">Clocks / Barom. / Gifts</a></li>
+		<li><a href="index.php?cPath=15">Clothing and Footwear</a></li>
+		<li><a href="index.php?cPath=117">Deck Hardware</a></li>
+		<li><a href="index.php?cPath=33">Docking / Mooring</a></li>
+		<li><a href="index.php?cPath=58">Electrical</a></li>
+		<li><a href="index.php?cPath=12">Electronics</a></li>
+		<li><a href="index.php?cPath=452">Gift Cards</a></li>    
+		<li><a href="index.php?cPath=23">Lights</a></li>
+		<li><a href="index.php?cPath=50">Maintenance</a></li>
+		<li><a href="index.php?cPath=9">Navigation</a></li>
+		<li><a href="index.php?cPath=31">Plumbing / Pumps</a></li>
+		<li><a href="index.php?cPath=409">Rigging</a></li>
+		<li><a href="index.php?cPath=26">Rope</a></li>
+		<li><a href="index.php?cPath=39">Safety</a></li>
+		<li><a href="index.php?cPath=28">Sailboat Hardware</a></li>
+		<li><a href="index.php?cPath=199">Ventilation</a></li>
+		</ul></li>
+
+	<li><span class="qmdivider qmdividery" ></span></li>
+	<li><a href="http://ca.binnacle.com/specials.php" style="font-size:12px;"><B>Specials</B></a></li>
+	<li><span class="qmdivider qmdividery" ></span></li>
+	<li><a href="http://ca.binnacle.com/products_new.php" style="font-size:12px;"><B>New Items</B></a></li>
+	<li><span class="qmdivider qmdividery" ></span></li>
+	<li><a href="http://ca.binnacle.com/p31/Help/pages.html" style="font-size:12px;"><B>Help</B></a></li>
+	<li><span class="qmdivider qmdividery" ></span></li>
+	<li><a href="https://ca.binnacle.com/contact_us.php" style="font-size:12px;"><B>Contact Us</B></a></li>  
+	<li><span class="qmdivider qmdividery" ></span></li>
+	<li><a href="https://ca.binnacle.com/account.php" style="font-size:12px;"><B>My Account</B></a></li>  
+<li class="qmclear"> </li></ul>
+</td>
+
+
+<td align="left">
+    <img src="images/canada-flag.gif" align="middle" alt="You are in the CA Store" title="You are in the CA Store" border="0" style="margin-right:5px;" />        
+</td>
+<td align="left">
+  <a href="http://us.binnacle.com" >
+    <img src="images/usa-flag.gif" alt="Click to visit the US Store" title="Click to visit the US Store" border="0" style="margin-right:5px;" />
+  </a>                      
+</td>      
+
+
+
+<td><div style="border-width:0px 0px 0px 1px;border-color:#aaaaaa;border-style:solid;font-size:1px;width:8px;height:31px;"></div>
+
+<td style="padding:0px 5px 0px 0px;">
+
+	<form name="quick_find" action="http://ca.binnacle.com/advanced_search_result.php" method="get" style="margin:0;padding:0;"><span class="info_bar_search"></span>&nbsp;&nbsp;&nbsp;<input type="text" name="keywords" class="search_input" size="25" maxlength="30" id="txtSearch" onfocus="return global_search_focus_js();" onblur="return global_search_focus_down_js();" onkeyup="LoadSearchResult(this.id);" style="font-family:arial;font-size:12px;width:195px;border-style:solid;border-width:2px;border-color:#E2383F;" value="Search model number / keyword" ><input type="hidden" name="osCsid" value="ptitut9l7329vt7gokkt0muqs4">  <input type="image" name="search" id="search" src="templates/magento/images/button_ok.jpg" valign="top" ></form>
+</td>
+
+<td style="padding:0px 5px 0px 0px;font-family:arial;font-size:10px;color:#444444"></td>
+
+<td><div style="font-size:1px;width:6px;height:34px;background-image:url(images/right_cap.gif);"></div></td></tr></table></div>
+
+
+<!-- Create Menu Settings: (Menu ID, Is Vertical, Show Timer, Hide Timer, On Click (options: 'all' * 'all-always-open' * 'main' * 'lev2'), Right to Left, Horizontal Subs, Flush Left, Flush Top) -->
+<script type="text/javascript">qm_create(0,false,500,500,false,false,false,false,false);</script>        
+
+			          <script type="text/javascript">
+function getXmlHttpRequestObject() {
+  	if (window.XMLHttpRequest) {
+  		return new XMLHttpRequest();
+  	} else if(window.ActiveXObject) {
+  		return new ActiveXObject("Microsoft.XMLHTTP");
+  	} else {
+  		alert("Your Browser is old!\nIt's about time to upgrade don't you think?");
+  	}
+  }
+              
+function OSCFieldSuggest(id) {
+base = this;
+base.FILE_XSLT_LAYOUT = 'includes/search_suggest.xsl';
+base.FILE_XML_DATA = 'searchsuggest.php';
+base._OBJ = document.getElementById(id);
+if(base._OBJ) {
+  //define the functions..
+  base.createXmlHttpRequest = function() {
+    var requestIntance = false;
+    if (window.XMLHttpRequest) { //FE
+      requestIntance = new XMLHttpRequest();
+      if (requestIntance.overrideMimeType) {
+        requestIntance.overrideMimeType('text/xml');
+      }
+    } else if (window.ActiveXObject) { // IE
+      try {
+        requestIntance = new ActiveXObject("Msxml2.XMLHTTP");
+      } catch (e) {
+        try { //last chance..
+          requestIntance = new ActiveXObject("Microsoft.XMLHTTP");
+        } catch (e) {}
+      }
+    }
+    if(!requestIntance) {
+      alert("Sorry, your browser don't support a little bit AJAX");
+    }
+    return(requestInstance);
+  };
+  base.loadDocument = function(file, funcAfterDocumentLoaded) {
+    var myRequest = getXmlHttpRequestObject();
+    myRequest.open('GET', file, true);
+    myRequest.onreadystatechange = function(e) {
+      if(myRequest.readyState == 4 && myRequest.status == 200) {
+        funcAfterDocumentLoaded(myRequest);
+      } else if(myRequest.readyState == 4) {
+        //error file isn't loaded.. 
+        //alert("Sorry, the file " + file + " couldn't loaded!");
+      }
+    };
+    myRequest.send(null);
+  };
+  base.parseXmlDocument = function(xsltLayout, xmlData) {
+    if(document.all) {
+      return(xmlData.transformNode(xsltLayout));
+    } else {
+      var processor = new XSLTProcessor();
+      processor.importStylesheet(xsltLayout);
+      var result = processor.transformToDocument(xmlData);
+      var xmls = new XMLSerializer();
+      return(xmls.serializeToString(result));
+    }
+  };
+  base.getDocumentOffsetTop = function(obj) {
+    return(parseInt(obj.offsetTop) + ((obj.offsetParent) ? base.getDocumentOffsetTop(obj.offsetParent) : 0));
+  };
+  base.getDocumentOffsetLeft = function(obj) {
+    return(parseInt(obj.offsetLeft) + ((obj.offsetParent) ? base.getDocumentOffsetLeft(obj.offsetParent) : 0));
+  };
+  base.show = function() {
+    base._OBJ_panel.style.visibility = 'visible';
+  };
+  base.hide = function() {
+    base._OBJ_panel.style.visibility = 'hidden';
+  };
+  base.suggestList = function() {
+    base.loadDocument(base.FILE_XML_DATA + "?" + base._OBJ.name + "=" + base._OBJ.value, function(request) {
+      base._OBJ_panel.innerHTML = base.parseXmlDocument(base._xsltSheet, request.responseXML);
+      base._OBJ_panel.style.top = (base.getDocumentOffsetTop(base._OBJ) + base._OBJ.offsetHeight) + "px";
+      base._OBJ_panel.style.left = base.getDocumentOffsetLeft(base._OBJ) + "px";
+      base.show();
+    }); 
+  };
+  //load xslt layout
+  base.loadDocument(base.FILE_XSLT_LAYOUT, function(request) {
+    base._xsltSheet = request.responseXML;
+  });
+  //create html panel to show
+  base._OBJ_panel = document.createElement('div');
+  base._OBJ_panel.style.visibility = 'hidden';
+  base._OBJ_panel.style.zIndex = '101';
+  base._OBJ_panel.style.position = 'absolute';
+  base._OBJ_panel.style.overflow = 'auto';
+  base._OBJ_panel.style.height = '';
+  //BOF: Mayur Added for HALIXO: AJAX SEARCH INSTALL FOR HEADER **BUGS/ENHANCEMENTS**
+  base._OBJ_panel.style.width = '300px';
+  //EOF: Mayur Added for HALIXO: AJAX SEARCH INSTALL FOR HEADER **BUGS/ENHANCEMENTS**
+  base._OBJ_panel.style.border = '1px solid #CCCCCC';
+  base._OBJ_panel.style.top = 0 + "px";
+  base._OBJ_panel.style.left = 0 + "px";
+  base._OBJ.parentNode.appendChild(base._OBJ_panel);
+  base._OBJ.onkeyup = function(e) {
+    if(base._OBJ.value.length > 0) {
+      base.suggestList();
+    }
+  };
+  base._OBJ.onblur = function(e) { //lost focus
+    //waiting a few milli sec. .. before hide the clicked panel ;)
+    setTimeout(function() {
+      base.hide();
+    }, 500);
+  };
+  base._OBJ.onfocus = function(e) { //got focus
+    if(base._OBJ.value.length > 0) {
+      base.suggestList();
+    }
+  };
+} else {
+  //no field found..
+  alert("Field with ID " + id + " couldn't found!");
+}
+}
+function LoadSearchResult(id)
+{
+	 var oscSearchSuggest = new OSCFieldSuggest(id);
+}
+
+// BOF: Gaurang added for DEVTRA: SHOPPING CART USABILITY ENHANCEMENTS 
+function global_search_focus_js()
+{
+	var global_search_text = document.getElementById("txtSearch").value;
+	if(global_search_text == 'Search model number / keyword')
+	{
+		document.getElementById("txtSearch").value = '';
+	}
+	return false;
+}
+
+function global_search_focus_down_js()
+{
+	var global_search_text = document.getElementById("txtSearch").value;
+	if(global_search_text == "")
+	{
+		document.getElementById("txtSearch").value = 'Search model number / keyword';
+	}
+	return false;
+}
+// EOF: Gaurang added for DEVTRA: SHOPPING CART USABILITY ENHANCEMENTS
+</script>
+        
+        
+      </td>
+    </tr>
+  </table>
+  <!-- header_eof //--><!-- header_eof //-->
+<!-- body //-->
+<table border="0" width="100%" cellspacing="0" cellpadding="0" class="maincont_tb">
+<!-- BOF: Mayur added for HALIXO: MAGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+  <tr class="main_bg_img">
+<!-- EOF: Mayur added for HALIXO: MAGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+        <!-- content //-->
+    <td width="100%" valign="top">
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+      	<!-- BOF: Mayur added for HALIXO: MEGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+        <tr class="headerNavigation_1">
+        	<!--BOF: Mayur added for HALIXO: MODIFY PRODUCT INFO BREADCRUMB **BUGS/ENHANCEMENTS**-->
+            <td class="headerNavigation_2"><div class="breadcrumb_new"><div class="breadcrumb_home_left"></div>
+
+<div class="breadcrumb_home_middle"><a href="http://ca.binnacle.com" class="headerNavigation">Home</a></div>
+
+<div class="breadcrumb_home_right_linked"></div>
+
+<div class="breadcrumb_background1"><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts/c1/index.html" class="headerNavigation">Clocks Barometers &amp; Gifts</a></div><!--this is the end of the background div and href-->
+
+<div class="breadcrumb_spCrumbCol1Col2"></div>
+
+<div class="breadcrumb_background2"><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Nautical-Clocks/c1_4/index.html" class="headerNavigation">Nautical Clocks</a></div><!--this is the end of the background div and href-->
+
+<div class="breadcrumb_spCrumbCol2Col3"></div>
+
+<div class="breadcrumb_background3"><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Nautical-Clocks/c1_4/p29/VICTORY-BRASS-CLOCK-PORTHOLE-STYLE-4.5in.-DIAL/product_info.html" class="headerNavigation">VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL</a></div><!--this is the end of the background div and href-->
+
+<div class="breadcrumb_spCrumbCol4Col4"></div>
+
+</div></td>
+            <!--EOF: Mayur added for HALIXO: MODIFY PRODUCT INFO BREADCRUMB **BUGS/ENHANCEMENTS**-->
+        </tr>
+        <!-- EOF: Mayur added for HALIXO: MEGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+        <!-- BOF: Gaurang added for HALIXO: SEARCH IMPROVEMENTS **BUGS/ENHANCEMENTS**  -->
+        		<!-- EOF: Gaurang added for HALIXO: SEARCH IMPROVEMENTS **BUGS/ENHANCEMENTS**  -->
+        <!-- BOF: Mayur added for HALIXO: NEWSLETTER SIGNUP -->
+                <!-- EOF: Mayur added for HALIXO: NEWSLETTER SIGNUP -->
+        
+      </table>
+      
+        <!--BOF: Gaurang added for HALIXO: COMPARE PRODUCTS-->
+		<span id="add_compare_success_msg"></span><span id="CompareProdTextSection" style="display:none;"></span>		<!--EOF: Gaurang added for HALIXO: COMPARE PRODUCTS-->
+        
+      <span id="add_wishlist_success_msg"></span><span id="responseTextSection" style="display:none;"></span><!-- RCI [BOM] -global-top : includes/runtime/global/CDS_CDpathSession_global_top.php -->
+<!-- RCI [EOM] -global-top : includes/runtime/global/CDS_CDpathSession_global_top.php -->
+<!-- RCI [BOM] -global-top : includes/runtime/global/CDS_header_banner_global_top.php -->
+<!-- RCI [EOM] -global-top : includes/runtime/global/CDS_header_banner_global_top.php -->
+<!--BOF: Mayur added for HALIXO: ATTRIBUTE DISCRIPTION WITH TOOLTIP-->
+<div id="dhtmltooltip"></div>
+<!--EOF: Mayur added for HALIXO: ATTRIBUTE DISCRIPTION WITH TOOLTIP-->
+<form name="cart_quantity" action="http://ca.binnacle.com/product_info.php?products_id=29&action=add_product&" method="post"  enctype="multipart/form-data">
+<!-- BOF: Gaurang added for HALIXO: QTY DISCOUNT REDESIGN -->
+	<script type="text/javascript">
+	// BOF: Gaurang added for HALIXO: HTML Anchors && Gaurang added for HALIXO: PRODUCT INFO TABS REDESIGN 
+	function show_review_tab(curr_tab, tab_ids_str) {
+		if(document.getElementById(curr_tab) && document.getElementById(curr_tab+'_li')) {
+			var tab_ids_arr = tab_ids_str.split(",");
+			
+			for(i = 0; i < tab_ids_arr.length; i++)
+			{
+				if(document.getElementById(tab_ids_arr[i]) && document.getElementById(tab_ids_arr[i]+'_li'))
+				{
+					if(tab_ids_arr[i] == curr_tab)
+					{
+						document.getElementById(tab_ids_arr[i]+'_li').className = 'selected';
+						document.getElementById(tab_ids_arr[i]).className = 'tab_inner_content_padding';
+					}
+					else
+					{
+						document.getElementById(tab_ids_arr[i]+'_li').className = '';
+						document.getElementById(tab_ids_arr[i]).className = 'yui-hidden tab_inner_content_padding';
+					}
+				}
+			}
+		}
+	}
+	// EOF: Gaurang added for HALIXO: HTML Anchors && Gaurang added for HALIXO: PRODUCT INFO TABS REDESIGN 
+	
+	function pop_up_qty_discount(product_id)
+	{
+		// BOF: Mayur added for HALIXO: QTY DISCOUNT REDESIGN **BUGS/ENHANCEMENTS**
+		window.open("pop_up_qty_discount.php?products_id="+product_id,"qty_disc_popup","toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=yes, width=400, height=420");
+		// EOF: Mayur added for HALIXO: QTY DISCOUNT REDESIGN **BUGS/ENHANCEMENTS**
+	}
+	
+	// BOF: Mayur added for HALIXO: SHIPPING TABLE RATES ON PRODUCT INFO && Mayur added for HALIXO: SHIPPING RATES ON PRODUCT INFO **BUGS/ENHANCEMENTS** 
+	function shipping_table_rate_js()
+	{
+		if(document.getElementById('show_shipping_rate_table').style.display == "none")
+		{
+			document.getElementById('show_shipping_rate_table_blank').style.display = "";
+			document.getElementById('show_shipping_rate_table').style.display = "";
+			
+			document.getElementById('heading_show_hide').innerHTML = "[Hide]";
+		}
+		else if(document.getElementById('show_shipping_rate_table').style.display == "")
+		{
+			document.getElementById('show_shipping_rate_table_blank').style.display = "none";
+			document.getElementById('show_shipping_rate_table').style.display = "none";
+			
+			document.getElementById('heading_show_hide').innerHTML = "[Show]";
+		}
+	}
+	// EOF: Mayur added for HALIXO: SHIPPING TABLE RATES ON PRODUCT INFO && Mayur added for HALIXO: SHIPPING RATES ON PRODUCT INFO **BUGS/ENHANCEMENTS** 
+	
+	// BOF: Gaurang added for HALIXO: GUARANTEE 
+	function show_hide_guarantee_section()
+	{
+		if(document.getElementById('guarantee_detail_section').style.display == "none")
+			document.getElementById('guarantee_heading_show_hide').innerHTML = "[Hide]";
+		else 
+			document.getElementById('guarantee_heading_show_hide').innerHTML = "[Click for more details]";
+	}
+	// EOF: Gaurang added for HALIXO: GUARANTEE 
+	
+	</script>
+<!-- EOF: Gaurang added for HALIXO: QTY DISCOUNT REDESIGN -->
+
+<table border="0" width="100%" cellspacing="0" cellpadding="5">
+        
+<!-- BOF: BOF: Mayur added for HALIXO: PRODUCT TAGS -->
+<!-- EOF: BOF: Mayur added for HALIXO: PRODUCT TAGS -->
+      
+<!-- BOF: Gaurang added for HALIXO: RELATED ACCESSORIES **BUGS/ENHANCEMENTS** -->      
+<!-- EOF: Gaurang added for HALIXO: RELATED ACCESSORIES **BUGS/ENHANCEMENTS** -->     
+      
+<!-- BOF: Gaurang added for HALIXO: SUB PRODUCTS REDESIGN -->      
+<!-- EOF: Gaurang added for HALIXO: SUB PRODUCTS REDESIGN -->
+      
+<!-- BOF: Mayur added for HALIXO: REVIEWS REDESIGN IN PRODUCT INFO PAGE -->
+<!-- EOF: Mayur added for HALIXO: REVIEWS REDESIGN IN PRODUCT INFO PAGE -->
+
+  <!--BOF: Gaurang added for HALIXO: PRODUCT MSRP-->
+    
+      		<tr>
+        		<td>
+        			<!-- BOF: Gaurang added for HALIXO: SPECIALS EXPIRY TIMER -->
+                    					<table id="specials-header-container" width="100%" height="55" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+					  <td align="left" valign="top" style="padding-left: 24px; width: 105px;"></td>
+					  <td align="center" style="font-family: Arial, sans-serif; font-size: 18px; color: white; line-height: 30px; color:#DD1E0B;" valign="top">This Sale ends in <span style="color: #DD1E0B; font-weight: bold; font-style: italic;">
+					  10 HRS : 34 MINS : 12 SECS					  </span><br />
+                      <span style="color: #DD1E0B; font-weight: normal; font-style: italic;"><b>or</b> when item is sold out</span></td>
+					  <td align="right" style="width: 105px; padding-right: 24px;"></td>
+					</tr>
+					</table>
+					  					<!-- EOF: Gaurang added for HALIXO: SPECIALS EXPIRY TIMER -->
+        			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	          			<tr>
+            				<!-- BOF: Gaurang added for HALIXO: FREE SHIPPING ENHANCEMENTS WITH WEIGHT AND MESSAGES -->
+            				<!-- BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+            				<td>
+            					<table border="0" cellpadding="2" cellspacing="0">
+            						<tr>
+            							<td>
+            								<h1>
+			            					VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL			            					</h1>
+			            				</td>
+			            			</tr>
+			            			
+	            					<tr>
+	            									<td class="products_model_info">
+	            										Binnacle.com #: &nbsp;10053
+	            									</td>
+	            								  </tr>											
+										<tr>
+											<td valign="top" align="left" class="smallText_1">
+											<a href="http://ca.binnacle.com/Nautical-Clocks/c4/index.html?filter_id=248" class="category7">View all <strong>VICTORY</strong> Products in Nautical Clocks</a>											</td>
+										</tr>
+																				<!--<tr>
+											<td class="smallText_1">
+																							</td>
+										</tr>-->
+																	
+							
+												
+			            				
+            					</table>
+            					<!-- EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+            					<!-- BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN -->
+            					</td>
+            			<!-- EOF: Gaurang added for HALIXO: FREE SHIPPING ENHANCEMENTS WITH WEIGHT AND MESSAGES -->
+            			<!-- BOF: Mayur added for HALIXO: MAGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** && BOF: Mayur added for HALIXO: FREE SHIPPING ENHANCEMENTS WITH WEIGHT AND MESSAGES **BUGS/ENHANCEMENTS** -->
+            				    <td align="right" width="25%" valign="top">
+            			<!-- EOF: Mayur added for HALIXO: MAGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** && EOF: Mayur added for HALIXO: FREE SHIPPING ENHANCEMENTS WITH WEIGHT AND MESSAGES **BUGS/ENHANCEMENTS** -->
+            				    <!-- EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN -->
+            					<table border="0" cellpadding="0" cellspacing="0">
+            							
+            							<tr>
+											<td class="padding_products_info" align="right"><b>Our Price:&nbsp;<s>CAD$189.95</s></b></td>
+										</tr>
+										<tr>
+											<td class="padding_products_info" align="right"><b><font color='#D50000'>Sale:&nbsp;CAD$169.95</font></b></td>
+										</tr>
+            					            							<tr>
+											<td class="padding_products_info" align="right"><i><b><font color='#0055C6'>You Save:&nbsp;CAD$20.00!</font></b></i></td>
+										</tr>
+										<!--EOF: Gaurang added for HALIXO: AMAZON PRODUCT LISTING **BUGS/ENHANCEMENTS**-->
+            					<tr><td align="right"><br style="line-height:4px;"><img src="images/Icon_FreeShipping.gif" border="0" alt="Free Shipping" title=" Free Shipping " width="234" height="20" /></td></tr>            					<!-- EOF: Mayur added for HALIXO: FREE SHIPPING ENHANCEMENTS WITH WEIGHT AND MESSAGES **BUGS/ENHANCEMENTS** -->
+            					</table>
+            				</td>
+          				</tr>
+        			</table>
+        		</td>
+      		</tr>
+      		
+<!-- BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN -->
+      		<!--<tr>
+        		<td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="10" /></td>
+      		</tr>-->
+  <!--EOF: Gaurang added for HALIXO: PRODUCT MSRP-->
+
+<!-- BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+  
+	<!--BOF: Mayur added for HALIXO: PRODUCT SHORT DESCRIPTION WITH MORE DETAILS LINK-->
+	<!-- EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+		<tr>
+			<td>
+    			<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
+      				<tr>
+        				<td width="40%" valign="top">
+        					<img name="product29" src="images/pixel_trans.gif" border="0" alt="VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL" title=" VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL " width="260" height="234" id="product_photo" onMouseOver="vZoom.add(this, 'images/');" hspace="5" vspace="5" />
+<script type="text/javascript"><!-- 
+document['product29'].src = 'images/productimages/10053.jpg'
+ //--></script>
+        				</td>
+        				<!-- BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+        				<td width="60%" valign="top">
+        					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								
+                  
+        						<style type="text/css">
+<!--
+.style2 {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+-->
+</style>
+<tr>
+<td width="100%" valign="top">
+
+  </td>
+			        			</tr>
+								<tr>
+			        				<td width="100%" valign="top">
+			        					<div class="shortDescriptionText"> 
+			        						Hinge bezel - opens porthole style. Matching barometer available. Clock dial diameter is 4-1/2". Brass case width is 5-1/2". Weight 2-1/2 lbs.<br><a href="http://ca.binnacle.com/p29/VICTORY-BRASS-CLOCK-PORTHOLE-STYLE-4.5in.-DIAL/product_info.html#description" onclick="show_review_tab('product_info','product_info,product_reviews,Shipping,product_extra_info,product_questions_answers');"><font face="arial, helvetica, sans-serif" size=1>more details></font></a>			        					</div>
+			        				</td>
+			        			</tr>
+			        			<!-- BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+			        			<tr>
+		        					<td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="10" /></td>
+		        				</tr>
+		        				<!-- EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+		        							        			
+					            <!-- attributes -->
+					            					            <!-- attributes eof -->
+					            
+								<!-- BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+																		<tr>
+											<td width="100%" valign="top">
+												<table border="0" width="100%" cellspacing="0" cellpadding="2" class="infoBox">
+											    	<tr class="infoBoxContents">
+											        	<td align="left" class="main" valign="middle"><!-- Begin Wishlist Code -->
+<script type="text/javascript"><!--
+function addwishlist() {
+document.cart_quantity.action='http://ca.binnacle.com/product_info.php?action=add_wishlist&';
+document.cart_quantity.submit();
+}
+--></script>
+<br style="line-height:3px;"><span id="show_wishlist_add_pro_link_29"><a href="#" onclick="return add_delete_wishlist_ajax('29','add','1');"><nobr><span class="template-button-left"></span><span class="template-button-middle">Add to Wish List</span><span class="template-button-right"></span></nobr></a></td><!-- End Wishlist Code -->										                <td class="main" align="left" valign="absmiddle" width="115px">
+										                	<table border="0" cellspacing="0" cellpadding="0" align="left">
+										                    	<tr>
+										                      												                      			<td class="main">Quantity:&nbsp;&nbsp;</td>
+										                      			<td class="main"><input type="text" name="cart_quantity" value="1" size="4" maxlength="4">&nbsp;&nbsp;</td>
+										                      												                      	</tr>
+										                  	</table>
+														</td>
+														<!-- BOF: Gaurang added for HALIXO: ENFORCE ATTRIBUTE SELECT && Mayur added for HALIXO: PRODUCT PRICE QUOTE ONLY && Mayur added for HALIXO: COMPARE PRODUCTS **BUGS/ENHANCEMENTS** && Mayur added for HALIXO: RELATED ACCESSORIES **BUGS/ENHANCEMENTS** -->
+														<td class="main quantity_disc_hover" width="143px" align="right">
+															<input type="hidden" name="products_id" value="29"><img onClick="return check_attr_and_submit('29');" src="templates/magento/images/buttons/english/btn_add_to_cart.gif" alt="Add to Cart">														</td>
+														<!-- EOF: Gaurang added for HALIXO: ENFORCE ATTRIBUTE SELECT && Mayur added for HALIXO: PRODUCT PRICE QUOTE ONLY && Mayur added for HALIXO: COMPARE PRODUCTS **BUGS/ENHANCEMENTS** && Mayur added for HALIXO: RELATED ACCESSORIES **BUGS/ENHANCEMENTS** -->
+										            </tr>
+										            
+										            <tr>
+										            	<td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="4" /></td>
+										            </tr>
+										            
+										            
+									            														
+													<tr>
+														<td class="add_or_to_compare" valign="middle" align="right" colspan="2">
+														<a href="http://ca.binnacle.com/m248/VICTORY/index.html" class="category7"></a><br /> <br />														</td>
+														<td class="add_or_to_compare" valign="middle" align="right">
+														<a href="http://ca.binnacle.com/m248/VICTORY/index.html" class="category7">View all <strong>VICTORY</strong> Products</a>														</td>
+													</tr>
+																										<tr>
+														<td class="add_or_to_compare" valign="middle" align="right" colspan="3">
+														<a href="http://ca.binnacle.com/Nautical-Clocks/c4/index.html" class="category7">View all Products in Nautical Clocks</a>														</td>
+													</tr>
+																							            	
+										            
+										            <tr>
+										            	<td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="4" /></td>
+										            </tr>
+								      
+										            <tr>
+										            	<!-- BOF: Gaurang added for HALIXO: QTY DISCOUNT REDESIGN -->
+											                											            <!-- EOF: Gaurang added for HALIXO: QTY DISCOUNT REDESIGN -->
+										            
+														<!--BOF: Gaurang added for HALIXO: COMPARE PRODUCTS-->
+														<td colspan="2">&nbsp;</td><td class="add_or_to_compare" valign="middle" align="right"><span id="show_or_text"></span><span id="show_compare_add_pro_link_29">            
+														    	<!-- BOF: Gaurang added for HALIXO: COMPARE PRODUCTS **BUGS/ENHANCEMENTS** -->
+											                	OR <a href="#" onclick="return add_compare_ajax('29','add');" class="category7">Add to Compare</a>
+											                	<!-- EOF: Gaurang added for HALIXO: COMPARE PRODUCTS **BUGS/ENHANCEMENTS** -->
+											                </span>															<!-- EOF: Mayur added for HALIXO: COMPARE PRODUCTS **BUGS/ENHANCEMENTS** -->
+															
+											                </td>
+																												<!--EOF: Gaurang added for HALIXO: COMPARE PRODUCTS-->
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<!-- EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN -->
+								<tr>
+			        				<td width="100%" valign="top">
+			        					<div class=""> 
+                                        <img src="images/product-question-mark.jpg" border=0 />&nbsp;
+													<a href="javascript:void(0);" onclick="ajax_for_openbox('29',event);">Do you have a question about this product?
+                          Click here to inquire.
+                          </a>			        						
+			        					</div>
+			        				</td>
+			        			</tr>
+			        			<tr>
+		        					<td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="10" /></td>
+		        				</tr>
+                								<!-- EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+					            
+		        			</table>
+		        		</td>
+		        		<!-- EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+      				</tr>
+    			</table>
+			</td>
+		</tr>
+<!-- BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+										<tr>
+		<td width="100%" valign="top">
+			<div id="CollapsiblePanel2" class="CollapsiblePanel" style="width:auto !important;">
+				<div class="CollapsiblePanelTab" onclick="show_hide_guarantee_section();"><FONT COLOR=red><I>Money Back Guarantee</I></FONT>&nbsp;&nbsp;<span id="guarantee_heading_show_hide">[Click for more details]</span></div>
+				<div class="CollapsiblePanelContent shortDescriptionText" id="guarantee_detail_section">
+					<table cellspacing="0" cellpadding="2" border="0" width="100%">
+						<tr>
+							<td align="left" valign="top" class="shortDescriptionText" style="border:0px solid #DDDDDD !important;">
+								<IMG SRC="../images/info-Guarantee.jpg" alt="Guarantee" align="left" style="margin-right:5px;" />
+								You may return your purchase to us (with a return authorization number) within 30 days of receiving your order and we will refund the purchase price of the product. 
+								<BR />
+								Items which are cut to order (rope, wire), software and printed materials (paper charts, books) are not returnable.	
+								<BR />							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="10" /></td>
+	</tr>
+	<script type="text/javascript">
+	<!--
+		var CollapsiblePanel2 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel2", {contentIsOpen:false});
+	//-->
+	</script>
+	  
+	<!--EOF: Mayur added for HALIXO: PRODUCT SHORT DESCRIPTION WITH MORE DETAILS LINK-->
+
+<!-- EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN -->
+  
+	<!--<tr>
+    	<td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /></td>
+  	</tr>-->
+  	
+  <!--<tr>
+    <td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /></td>
+  </tr>-->
+  
+	<!-- BOF: Gaurang added for HALIXO: PRODUCT INFO TABS REDESIGN -->
+	<!-- Tabs Start -->
+	<tr>
+		<td class="yui-skin-sam">
+			<!-- BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN && Gaurang added for HALIXO: Q&A MODULE -->
+			<a name="description"></a>
+			<a name="review_list"></a>
+			<a name="q_a_list"></a>
+			<!-- EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN && Gaurang added for HALIXO: Q&A MODULE -->
+			
+			<div id="demo" class="yui-navset yui-navset-top">
+				<ul class="yui-nav">
+					<li  class="selected" id="product_info_li" onclick="show_review_tab('product_info','product_info,product_reviews,Shipping,product_extra_info,product_questions_answers');"><a href="javascript:void();"><em>Description</em></a></li><li  id="product_reviews_li" onclick="show_review_tab('product_reviews','product_info,product_reviews,Shipping,product_extra_info,product_questions_answers');"><a href="javascript:void();"><em>Reviews</em></a></li><li id="Shipping_li" onclick="show_review_tab('Shipping','product_info,product_reviews,Shipping,product_extra_info,product_questions_answers');"><a href="javascript:void();"><em>Shipping</em></a></li><li id="product_extra_info_li" onclick="show_review_tab('product_extra_info','product_info,product_reviews,Shipping,product_extra_info,product_questions_answers');"><a href="javascript:void();"><em>Extra Info</em></a></li><li id="product_questions_answers_li" onclick="show_review_tab('product_questions_answers','product_info,product_reviews,Shipping,product_extra_info,product_questions_answers');"><a href="javascript:void();"><em>Q & A</em></a></li>				</ul>
+				
+				<div class="yui-content">
+					<div class=" tab_inner_content_padding" id="product_info">							<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+								<tr>
+									<!--BOF: Mayur added for HALIXO: PRODUCT SHORT DESCRIPTION WITH MORE DETAILS LINK-->
+									<td class="main" width="100%">
+										<p>Quartz mechanism. Beautifully hand polished. Solid cast brass case. Wall or Bulkhead mounting. Hinge bezel - opens porthole style. Clock dial diameter is 4-1/2". Brass case diameter is 5-1/2". Weight 2-1/2 lbs. Matching barometer available.</p>									</td>
+									<!--EOF: Mayur added for HALIXO: PRODUCT SHORT DESCRIPTION WITH MORE DETAILS LINK-->  
+								</tr>
+								
+								<!-- sub products -->
+																<!-- sub products eof -->
+							</table>
+							</div><div class="yui-hidden tab_inner_content_padding" id="product_reviews">						<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+								
+	<tr>
+		<td>
+			<table border="0" width="100%" cellspacing="0" cellpadding="5">
+				<tr>
+					<td class="border_compare">
+					<table border="0" width="100%" cellspacing="0" cellpadding="0">
+
+
+	<tr>
+		<td class="main">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="smallText_1">
+						Share your knowledge of this product with other customers... 					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+			
+    			</table>
+    			</td></tr>
+			</table>
+		</td>
+	</tr>
+						</table>
+						</div><div class="yui-hidden tab_inner_content_padding" id="Shipping">							<table cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td class="main" valign="top">
+									<img src="images/Icon_FreeShipping.gif" border="0" alt="Free Shipping" title=" Free Shipping " width="234" height="20" /><p><p>Free ground shipping via Canada Post (we may use UPS for some locations) within Canada on <b>most orders</b> 
+  of $99 or more (pre-tax).<br>
+  <B>Q.</B> What do we mean by most orders?<br>
+  <B>A.</B> Some items are exempt from this offer and are indicated on the product page. Exempt items are usually bulky/heavy items such as buoys.
+  Over 98% of 
+  the items on Binnacle.com qualify for the free shipping offer.<br>
+  <br>
+  
+  To see what your shipping charge (if any) will be you can add the item(s) and quantities
+  to the shopping cart and you will see a shipping cost calculator
+  
+<P>Please Note:<br>
+Remote areas which require an &quot;air stage&quot; for delivery are exempt from the Free Shipping offer. These are typically remote northern areas.</p>									</td>
+								</tr>
+							</table>
+							</div><div class="yui-hidden tab_inner_content_padding" id="product_extra_info">						
+						<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+															<tr>
+									<td width="100%" valign="top" style="padding-left:8px;">
+										<br /> <br /><strong>Manufacturer Info</strong><br /><li class="main"><a href="http://ca.binnacle.com/m248/VICTORY/index.html">Other products from VICTORY</li>									</td>
+								</tr>
+								<tr><td><hr style="color:#dddddd;"></td></tr>
+								<tr>
+									<td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="10" /></td>
+								</tr>
+															
+							<tr>
+								<td style="padding-left:8px;">
+									<li class="main"><strong>Comments</strong></li><li class="main">There are currently no product reviews</li><li class="main"><a href="http://ca.binnacle.com/product_reviews_write.php?products_id=29">Write a review on this product!</a></li><br /><br /><li class="main"><strong>Extra Info</strong></li>										<li class="main">This product was added to our catalog on Thursday 04 May, 2006.</li>
+										<li class="main"><a href="http://ca.binnacle.com/p29/VICTORY-BRASS-CLOCK-PORTHOLE-STYLE-4.5in.-DIAL/product_info.html?action=notify">Notify me of updates to <b>VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL</b></a></li><li class="main"><a href="http://ca.binnacle.com/tell_a_friend.php?products_id=29">Tell someone you know about this product.</a></li>								</td>
+							</tr>
+						</table>
+						</div><div class="yui-hidden tab_inner_content_padding" id="product_questions_answers"><input type="hidden" name="q_a_products_id" value="29" id="q_a_products_id"><script type="text/javascript">
+function show_hide_q_a_block(catID, spanNo, spanID)
+{
+	if(catID == 'prevValue') {
+		catID = document.getElementById('search_block').value;
+		if(catID == '')
+			catID = 'product';
+	} else {
+		document.getElementById('search_block').value = catID;
+	}
+	
+	if(spanNo > 0) {
+		for(var i=1; i<=spanNo; i++) {
+			if(document.getElementById('breadcrumb_'+i)) {
+				if(i==spanID) {
+					document.getElementById('breadcrumb_'+i).className = 'bold_font_style';
+				} else {
+					document.getElementById('breadcrumb_'+i).className = '';
+				}
+			}
+		}
+	}
+	
+	var searchString = document.getElementById('q_a_search').value;
+	if(searchString == "Search all questions for this product") {
+		searchString = '';
+	}
+	
+	if(document.getElementById('q_a_block_3_1')) {
+		if(searchString == '') {
+			document.getElementById('q_a_block_3_1').style.display = 'none';
+		} else {
+			document.getElementById('q_a_block_3_1').style.display = '';
+		}
+	}
+	
+	// START : AJAX
+	
+	//var objXmlHTTP = new Subsys_JsHttpRequest_Js();
+	var objXmlHTTP;  // The variable that makes Ajax possible!
+	
+	try{
+		// Opera 8.0+, Firefox, Safari
+		objXmlHTTP = new XMLHttpRequest();
+	} catch (e){
+		// Internet Explorer Browsers
+		try{
+			objXmlHTTP = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try{
+				objXmlHTTP = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e){
+				// Something went wrong
+				//alert("Your browser broke!");
+				return false;
+			}
+		}
+	}
+	
+	// BOF: Ajax Loading Image 
+	document.getElementById('loading-mask').style.display = 'block';
+	document.getElementById('loading-mask').style.top = '250px';
+	// EOF: Ajax Loading Image 
+	
+	senddata = "set_browse_tab=3&catID="+catID;
+	senddata += "&searchString="+escape(searchString);
+	senddata += "&pID="+document.getElementById('q_a_products_id').value;
+	
+	objXmlHTTP.onreadystatechange = function()
+	{
+		if(objXmlHTTP.readyState == 4)
+		{
+			document.getElementById('q_a_block').innerHTML = objXmlHTTP.responseText;
+			
+			document.getElementById('loading-mask').style.display = 'none';
+				
+			return false;
+		}
+	}
+	
+	var url = 'ajax_q_and_a.php';
+	//objXmlHTTP.caching = false;
+	objXmlHTTP.open("POST", url, true);
+	objXmlHTTP.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	objXmlHTTP.setRequestHeader("Content-length", senddata.length);
+	objXmlHTTP.setRequestHeader("Connection", "close");
+	
+	objXmlHTTP.send( senddata );
+	
+	// END : AJAX
+	
+	return false;
+}
+
+function q_a_search_hide_default_text()
+{
+	var searchText = document.getElementById("q_a_search").value;
+	if(searchText == 'Search all questions for this product')
+	{
+		document.getElementById("q_a_search").value = '';
+	}
+	return false;
+}
+
+function q_a_search_focus_default_text()
+{
+	var searchText = document.getElementById("q_a_search").value;
+	if(searchText == "")
+	{
+		document.getElementById("q_a_search").value = 'Search all questions for this product';
+	}
+	return false;
+}
+
+function show_new_question_form() {
+		
+	// START : AJAX
+	
+	//var objXmlHTTP = new Subsys_JsHttpRequest_Js();
+	var objXmlHTTP;  // The variable that makes Ajax possible!
+	
+	try{
+		// Opera 8.0+, Firefox, Safari
+		objXmlHTTP = new XMLHttpRequest();
+	} catch (e){
+		// Internet Explorer Browsers
+		try{
+			objXmlHTTP = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try{
+				objXmlHTTP = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e){
+				// Something went wrong
+				//alert("Your browser broke!");
+				return false;
+			}
+		}
+	}
+	
+	// BOF: Ajax Loading Image 
+	document.getElementById('loading-mask').style.display = 'block';
+	document.getElementById('loading-mask').style.top = '250px';
+	// EOF: Ajax Loading Image 
+	
+	senddata = "ask_new_question=1";
+	
+	objXmlHTTP.onreadystatechange = function()
+	{
+		if(objXmlHTTP.readyState == 4)
+		{
+			if(objXmlHTTP.responseText != '') {
+				document.getElementById('q_a_tab_section').style.display = 'none';
+				document.getElementById('q_a_new_question_section').style.display = '';
+				document.getElementById('q_a_new_question_column_section').innerHTML = objXmlHTTP.responseText;
+				
+				document.getElementById('loading-mask').style.display = 'none';
+				
+				return false;
+			}
+		}
+	}
+	
+	var url = 'ajax_q_and_a.php';
+	//objXmlHTTP.caching = false;
+	objXmlHTTP.open("POST", url, true);
+	objXmlHTTP.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	objXmlHTTP.setRequestHeader("Content-length", senddata.length);
+	objXmlHTTP.setRequestHeader("Connection", "close");
+	
+	objXmlHTTP.send( senddata );
+	
+	// END : AJAX
+	
+	return false;
+}
+
+function hide_new_question_form_preview() {
+	document.getElementById('q_a_new_question_column_section').innerHTML = '';
+	document.getElementById('q_a_new_question_section').style.display = 'none';
+	document.getElementById('q_a_preview_column_section').innerHTML = '';
+	document.getElementById('q_a_preview_section').style.display = 'none';
+	document.getElementById('q_a_tab_section').style.display = '';
+	
+	return false;
+}
+
+function show_current_question_form() {
+	document.getElementById('q_a_preview_column_section').innerHTML = '';
+	document.getElementById('q_a_preview_section').style.display = 'none';
+	document.getElementById('q_a_new_question_section').style.display = '';
+	
+	return false;
+}
+
+
+function show_question_preview_submit(submit_flag) {
+	var q_a_question = document.getElementById('q_a_question').value;
+	var q_a_additional_detail = document.getElementById('q_a_additional_detail').value;
+	var q_a_location = document.getElementById('q_a_location').value;
+	var q_a_name = document.getElementById('q_a_name').value;
+	var q_a_email = document.getElementById('q_a_email').value;
+	var q_a_image_name = document.getElementById('queImageName').value;
+	
+	// Start: Check Error 
+	var errorFlag = 0;
+	if(q_a_question == '') {
+		errorFlag = 1;
+		
+		document.getElementById('q_a_question').className = 'BVQAError';
+		document.getElementById('show_q_a_question_error').style.display = '';
+	} else {
+		document.getElementById('q_a_question').className = '';
+		document.getElementById('show_q_a_question_error').style.display = 'none';
+	}
+	if(q_a_email == '') {
+		errorFlag = 1;
+		
+		document.getElementById('q_a_email').className = 'BVQAError';
+		document.getElementById('show_q_a_email_error').style.display = '';
+	} else {
+		document.getElementById('q_a_email').className = '';
+		document.getElementById('show_q_a_email_error').style.display = 'none';
+	}
+	
+	if(errorFlag == 1) {
+		return false;
+	}
+	// End: Check Error 
+	
+	var ans_mail_flag = 0;
+	if(document.getElementById('q_a_answer_mail').checked) {
+		ans_mail_flag = 1;
+	}
+	
+	// START : AJAX
+	
+	//var objXmlHTTP = new Subsys_JsHttpRequest_Js();
+	var objXmlHTTP;  // The variable that makes Ajax possible!
+	
+	try{
+		// Opera 8.0+, Firefox, Safari
+		objXmlHTTP = new XMLHttpRequest();
+	} catch (e){
+		// Internet Explorer Browsers
+		try{
+			objXmlHTTP = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try{
+				objXmlHTTP = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e){
+				// Something went wrong
+				//alert("Your browser broke!");
+				return false;
+			}
+		}
+	}
+	
+	if(submit_flag == '1') {
+		senddata = "submit_question=1&pID="+document.getElementById('q_a_products_id').value;
+	} else {
+		senddata = "preview_question=1";
+	}
+	
+	senddata += "&q_a_question="+escape(q_a_question)+"&q_a_additional_detail="+escape(q_a_additional_detail)+"&q_a_location="+escape(q_a_location);
+	senddata += "&q_a_name="+escape(q_a_name)+"&q_a_email="+escape(q_a_email)+"&ans_mail_flag="+escape(ans_mail_flag);
+	senddata += "&q_a_image_name="+escape(q_a_image_name);
+	
+	// BOF: Ajax Loading Image 
+	document.getElementById('loading-mask').style.display = 'block';
+	document.getElementById('loading-mask').style.top = '250px';
+	// EOF: Ajax Loading Image 
+	
+	objXmlHTTP.onreadystatechange = function()
+	{
+		if(objXmlHTTP.readyState == 4)
+		{
+			if(objXmlHTTP.responseText != '') {
+				document.getElementById('q_a_tab_section').style.display = 'none';
+				
+				if(submit_flag == '1') {
+					document.getElementById('q_a_new_question_column_section').innerHTML = '';
+				}
+				document.getElementById('q_a_new_question_section').style.display = 'none';
+				document.getElementById('q_a_preview_section').style.display = '';
+				document.getElementById('q_a_preview_column_section').innerHTML = objXmlHTTP.responseText;
+				
+				document.getElementById('loading-mask').style.display = 'none';
+				
+				return false;
+			}
+		}
+	}
+	
+	var url = 'ajax_q_and_a.php';
+	//objXmlHTTP.caching = false;
+	objXmlHTTP.open("POST", url, true);
+	objXmlHTTP.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	objXmlHTTP.setRequestHeader("Content-length", senddata.length);
+	objXmlHTTP.setRequestHeader("Connection", "close");
+	
+	objXmlHTTP.send( senddata );
+	
+	// END : AJAX
+	
+	return false;
+}
+
+function q_a_ajax_not_helpful(qID, que_ans_id, actionText, tableName, noID) {
+	// START : AJAX
+	
+	//var objXmlHTTP = new Subsys_JsHttpRequest_Js();
+	var objXmlHTTP;  // The variable that makes Ajax possible!
+	
+	try{
+		// Opera 8.0+, Firefox, Safari
+		objXmlHTTP = new XMLHttpRequest();
+	} catch (e){
+		// Internet Explorer Browsers
+		try{
+			objXmlHTTP = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try{
+				objXmlHTTP = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e){
+				// Something went wrong
+				//alert("Your browser broke!");
+				return false;
+			}
+		}
+	}
+	
+	senddata = "set_helpful_nothelpful=1&que_ans_id="+que_ans_id+"&actionText="+actionText+"&tableName="+tableName;
+	
+	// BOF: Ajax Loading Image 
+	document.getElementById('loading-mask').style.display = 'block';
+	document.getElementById('loading-mask').style.top = '250px';
+	// EOF: Ajax Loading Image 
+	
+	objXmlHTTP.onreadystatechange = function()
+	{
+		if(objXmlHTTP.readyState == 4)
+		{
+			if(objXmlHTTP.responseText != '') {
+				
+				
+				document.getElementById(noID+que_ans_id).innerHTML = objXmlHTTP.responseText;
+				
+				show_hide_feedback_success_msg(qID);
+				
+				document.getElementById('loading-mask').style.display = 'none';
+				
+				return false;
+			}
+		}
+	}
+	
+	var url = 'ajax_q_and_a.php';
+	//objXmlHTTP.caching = false;
+	objXmlHTTP.open("POST", url, true);
+	objXmlHTTP.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	objXmlHTTP.setRequestHeader("Content-length", senddata.length);
+	objXmlHTTP.setRequestHeader("Connection", "close");
+	
+	objXmlHTTP.send( senddata );
+	
+	// END : AJAX
+	
+	return false;
+}
+
+function show_hide_question_section(qID) {
+	if(document.getElementById('question_section_id_'+qID).style.display == 'none') {
+		document.getElementById('question_section_id_'+qID).style.display = '';
+	} else {
+		document.getElementById('question_section_id_'+qID).style.display = 'none';
+	}
+	
+	var que_ids = document.getElementById('hdn_questions_ids').value;
+	
+	var que_ids_arr = que_ids.split(",");
+	
+	var expand_flag = 1;
+	for(i = 0; i < que_ids_arr.length; i++) {
+		if(document.getElementById('question_section_id_'+que_ids_arr[i]) && document.getElementById('question_section_id_'+que_ids_arr[i]).style.display == '') 
+		{
+			expand_flag = 0;
+			break;
+		}
+	}
+	
+	if(expand_flag == 1) {
+		document.getElementById('expand_link').style.display = '';
+		document.getElementById('collapse_link').style.display = 'none';
+	} else {
+		document.getElementById('expand_link').style.display = 'none';
+		document.getElementById('collapse_link').style.display = '';
+	}
+}
+
+function show_hide_all_questions_section(actionText) {
+	var que_ids = document.getElementById('hdn_questions_ids').value;
+	
+	var que_ids_arr = que_ids.split(",");
+	
+	if(actionText == 'show') {
+		for(i = 0; i < que_ids_arr.length; i++) {
+			if(document.getElementById('question_section_id_'+que_ids_arr[i])) 
+				document.getElementById('question_section_id_'+que_ids_arr[i]).style.display = '';
+		}
+		
+		document.getElementById('expand_link').style.display = 'none';
+		document.getElementById('collapse_link').style.display = '';
+	} else {
+		for(i = 0; i < que_ids_arr.length; i++) {
+			if(document.getElementById('question_section_id_'+que_ids_arr[i])) 
+				document.getElementById('question_section_id_'+que_ids_arr[i]).style.display = 'none';
+		}
+		
+		document.getElementById('expand_link').style.display = '';
+		document.getElementById('collapse_link').style.display = 'none';
+	}
+}
+
+// Start : Upload & Remove Question Image Using Javascript 
+function upload_question_image() {
+	var prev_action = document.cart_quantity.action;
+	
+	document.cart_quantity.action = "upload.php";
+	document.cart_quantity.target = "upload_target";
+	document.cart_quantity.submit();
+	
+	document.cart_quantity.action = prev_action;
+	document.cart_quantity.target = "";
+	
+	return false;
+}
+
+function stopUpload(success,imgName)
+{
+	document.getElementById('f1_upload_form').innerHTML = '<input name="myfile" type="file" size="30" />';
+	if (success == 2)
+	{
+		alert("Please select valid image for question.");
+		return false;
+	}
+	else 
+	{
+		document.getElementById('queImageName').value = imgName;
+		
+		// START : AJAX
+		
+		//var objXmlHTTP = new Subsys_JsHttpRequest_Js();
+		var objXmlHTTP;  // The variable that makes Ajax possible!
+		
+		try{
+			// Opera 8.0+, Firefox, Safari
+			objXmlHTTP = new XMLHttpRequest();
+		} catch (e){
+			// Internet Explorer Browsers
+			try{
+				objXmlHTTP = new ActiveXObject("Msxml2.XMLHTTP");
+			} catch (e) {
+				try{
+					objXmlHTTP = new ActiveXObject("Microsoft.XMLHTTP");
+				} catch (e){
+					// Something went wrong
+					//alert("Your browser broke!");
+					return false;
+				}
+			}
+		}
+		
+		senddata = "display_que_image=1&imgName="+escape(imgName);
+		
+		// BOF: Ajax Loading Image 
+		document.getElementById('loading-mask').style.display = 'block';
+		document.getElementById('loading-mask').style.top = '250px';
+		// EOF: Ajax Loading Image 
+		
+		objXmlHTTP.onreadystatechange = function()
+		{
+			if(objXmlHTTP.readyState == 4)
+			{
+				document.getElementById("image_display_section").style.display = "";
+				document.getElementById("image_display_section").innerHTML = objXmlHTTP.responseText;
+				
+				document.getElementById('loading-mask').style.display = 'none';
+				
+				return false;
+			}
+		}
+		
+		var url = 'ajax_q_and_a.php';
+		//objXmlHTTP.caching = false;
+		objXmlHTTP.open("POST", url, true);
+		objXmlHTTP.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		objXmlHTTP.setRequestHeader("Content-length", senddata.length);
+		objXmlHTTP.setRequestHeader("Connection", "close");
+		
+		objXmlHTTP.send( senddata );
+		
+		// END : AJAX
+	}
+	
+	return true;
+}
+
+function remove_question_image() {
+	document.getElementById("image_display_section").innerHTML = '';
+	document.getElementById("image_display_section").style.display = "none";
+	document.getElementById("queImageName").value = '';
+}
+// End : Upload & Remove Question Image Using Javascript 
+
+function popupWindow(url,width,height) {
+	window.open(url,'popupQAWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width='+width+',height='+height+',screenX=150,screenY=150,top=150,left=150')
+}
+
+function show_hide_feedback_success_msg(qID) {
+	var que_ids = document.getElementById('hdn_questions_ids').value;
+	
+	var que_ids_arr = que_ids.split(",");
+	
+	for(i = 0; i < que_ids_arr.length; i++) {
+		if(document.getElementById('success_feedback_msg_'+que_ids_arr[i])) 
+			document.getElementById('success_feedback_msg_'+que_ids_arr[i]).style.display = 'none';
+		
+		if(document.getElementById('success_feedback_msg_1_'+que_ids_arr[i])) 
+			document.getElementById('success_feedback_msg_1_'+que_ids_arr[i]).style.display = 'none';
+	}
+	
+	if(document.getElementById('success_feedback_msg_'+qID)) 
+		document.getElementById('success_feedback_msg_'+qID).style.display = '';
+	
+	if(document.getElementById('success_feedback_msg_1_'+qID)) 
+		document.getElementById('success_feedback_msg_1_'+qID).style.display = '';
+}
+
+</script>
+<table cellpadding="0" cellspacing="0" id="q_a_tab_section" border="0" style="width:100%;" >
+	<!-- Start: Ask A Question Section && Search Section -->
+	<tr>
+		<td>
+       		<table border="0" width="100%" cellpadding="3" cellspacing="0" align="center">
+       			<tr>
+        			<td><img src="images/pixel_trans.gif" border="0" alt="" width="10" height="10" /></td>
+        		</tr>
+        		<tr>
+        			<td class="main left_right_padding">
+        				<table border="0" width="100%" cellpadding="0" cellspacing="0">
+        					<tr>
+                    			<td class="main" align="left">
+                    				<img src="templates/magento/images/buttonAskANewQuestion.gif" border="0" alt="" width="138" height="20"  align="top" class="mouse_hover_row" onclick="return show_new_question_form();" />                    			</td>
+                    			<td class="main" align="right">
+                    				<input type="text" name="q_a_search" value="Search all questions for this product" id="q_a_search" size="60"  onfocus="return q_a_search_hide_default_text();" onblur="return q_a_search_focus_default_text();"><img src="images/pixel_trans.gif" border="0" alt="" width="10" height="100%" /><img src="templates/magento/images/buttonSearch.gif" border="0" alt="" width="68" height="23"  align="top" class="mouse_hover_row" onclick="return show_hide_q_a_block('prevValue','0','0');" /><input type="hidden" name="search_block" id="search_block">                    			</td>
+                    		</tr>
+        				</table>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td class="bottom_border"><img src="images/pixel_trans.gif" border="0" alt="" width="10" height="10" /></td>
+        		</tr>
+        	</table>
+		</td>
+	</tr>
+	<!-- End: Ask A Question Section && Search Section -->
+	<tr>
+		<td>
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				
+				<!-- Start: Q&A Section -->
+				<tr>
+					<td id="q_a_block" width="100%" align="left">
+						&nbsp;					</td>
+				</tr>
+				<!-- End: Q&A Section -->
+				
+				<!-- Start: Search Suggestion Q&A Section -->
+				<tr>
+					<td>
+						<table border="0" id="q_a_block_3_1" width="100%" cellpadding="3" cellspacing="0" align="left" style="display:none;">
+                    		<tr>
+                    			<td class="all_padding bottom_border">
+                    				<table border="0" width="100%" cellpadding="0" cellspacing="0">
+                    					<tr>
+							    			<td class="main">
+							    				Didn't find what you were looking for? Try one of these related categories:							    			</td>
+							    		</tr>
+							    		<tr>
+		                        			<td><img src="images/pixel_trans.gif" border="0" alt="" width="10" height="10" /></td>
+		                        		</tr>
+							    		<tr>
+							    			<td class="headerNavigation_1">
+							    				 <font class="arrow_style">&raquo;</font> <a href="javascript:void();" onclick="return show_hide_q_a_block('0','4','1');" class="headerNavigation_1"><span id="breadcrumb_1">All Categories</a><br><img src="images/pixel_trans.gif" border="0" alt="" width="10" height="1" /> <font class="arrow_style">&raquo;</font> <a href="javascript:void();" onclick="return show_hide_q_a_block('4','4','2');" class="headerNavigation_1"><span id="breadcrumb_2">Nautical Clocks</a><br><img src="images/pixel_trans.gif" border="0" alt="" width="20" height="1" /> <font class="arrow_style">&raquo;</font> <a href="javascript:void();" onclick="return show_hide_q_a_block('product','4','3');" class="headerNavigation_1"><span class="bold_font_style" id="breadcrumb_3">VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL</span></a>							    			</td>
+							    		</tr>
+                    				</table>
+                    			</td>
+                    		</tr>
+                    	</table>
+					</td>
+				</tr>
+				<!-- End: Search Suggestion Q&A Section -->
+			</table>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="10" /></td>
+	</tr>
+</table>
+
+<!-- Start: New Question Section -->
+<table cellpadding="0" cellspacing="0" border="0" id="q_a_new_question_section" style="width:100%; display:none;">
+	<tr>
+		<td width="100%" align="left" valign="top" id="q_a_new_question_column_section">
+			
+		</td>
+	</tr>
+</table>
+<!-- End: New Question Section -->
+
+<!-- Start: Preview Section -->
+<table cellpadding="0" cellspacing="1" border="0" id="q_a_preview_section" style="width:100%; display:none;">
+	<tr>
+		<td width="100%" align="left" valign="top" id="q_a_preview_column_section">
+			
+		</td>
+	</tr>
+</table>
+<!-- End: Preview Section -->
+
+<table border="0" cellspacing="0" cellpadding="0" align="center" id="loading-mask" style="display:none; position:absolute; left:40%; color:#d85909; top:0px; opacity:0.7;filter:alpha(opacity=70); z-index:100;">
+	<tr>
+		<td align="center" class="loaderImageStyle" id="loading_mask_loader">
+			<img src="templates/magento/images/ajax-loader-tr.gif" border="0" alt="Loading..." title=" Loading... " width="31" height="31" /><br/>Please wait...		</td>
+	</tr>
+</table></div>				</div>
+			</div>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="5" /></td>
+	</tr>
+	<!-- EOF: Gaurang added for HALIXO: PRODUCT INFO TABS REDESIGN -->
+	
+    
+<!-- xsell_products //-->
+   <tr>
+     <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" style="">
+          								<tr style="">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="contentBoxHeading">
+  <tr>
+    <td class="contentBoxHeadingLeft"><img src="templates/magento/images/infobox/content_top_left.gif" border="0" alt=""></td>
+    <td width="100%" class="contentBoxHeadingCenter_productinfo">We Also Recommend :</td>
+    <td class="contentBoxHeadingRight"><img src="templates/magento/images/infobox/content_top_right.gif" border="0" alt=""></td>
+  </tr></table></td>
+	          				</tr><tr style="">
+	          							<td width="100%" align="center" style="border-right: solid 1px #D3D3D3; padding-right: 10px; border-left: solid 1px #D3D3D3; padding-left: 10px;">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="contentBox">
+  <tr>
+<td class="BoxBorderLeft"></td><td><tr style="">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="4" class="contentBoxContents">
+  <tr>
+    <td align="center" class="smallText" width="20%" valign="top"><a href="http://ca.binnacle.com/p30/VICTORY-BRASS-BAROMETER-PORTHOLE-STYLE-4-1/2in.-DIAL/product_info.html"><img src="images/productimages/thumbs/10054.jpg" border="0" alt="VICTORY BRASS BAROMETER PORTHOLE STYLE 4-1/2in. DIAL" title=" VICTORY BRASS BAROMETER PORTHOLE STYLE 4-1/2in. DIAL " width="80" height="71" /></a><br><br style="line-height:10px;"><a href="http://ca.binnacle.com/p30/VICTORY-BRASS-BAROMETER-PORTHOLE-STYLE-4-1/2in.-DIAL/product_info.html" class="amazon">VICTORY BRASS BAROMETER PORTHOLE STYLE 4-1/2in. DIAL</a><br><br style="line-height:3px;"><span class="specialprice">&nbsp;<s>CAD$199.95</s>&nbsp;&nbsp;<span class="productSpecialPrice">CAD$179.95</span>&nbsp;</span><br><br style='line-height:4px;'><font color='#BDBDBD'><b>Not Rated</b></font><br><br style="line-height:8px;"><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Barometers/c1_5/p30/VICTORY-BRASS-BAROMETER-PORTHOLE-STYLE-4-1/2in.-DIAL/index.html?action=buy_now"><nobr><span class="template-button-left"></span><span class="template-button-middle">Buy Now</span><span class="template-button-right"></span></nobr></a></td>
+  </tr></table></td>
+	          				</tr></td><td class="BoxBorderRight"><img src="images/pixel_trans.gif" border="0" alt="" width="1" height="1" /></td>  </tr></table></td>
+	          				</tr><tr style="">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="contentBoxFooter">
+  <tr>
+    <td class="contentBoxFooterLeft"><img src="templates/magento/images/infobox/content_footer_left.gif" border="0" alt=""></td>
+    <td width="100%" class="contentBoxFooterCenter"><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /></td>
+    <td class="contentBoxFooterRight"><img src="templates/magento/images/infobox/content_footer_right.gif" border="0" alt=""></td>
+  </tr></table></td>
+	          				</tr>		
+          							</table><br>           </td>
+          </tr>
+<!-- xsell_products_eof //-->
+  <!-- also_purchased_products //-->
+  <tr>
+    <td>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" style="">
+          								<tr style="">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="contentBoxHeading">
+  <tr>
+    <td class="contentBoxHeadingLeft"><img src="templates/magento/images/infobox/content_top_left.gif" border="0" alt=""></td>
+    <td width="100%" class="contentBoxHeadingCenter_productinfo">Customers who bought VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL also purchased</td>
+    <td class="contentBoxHeadingRight"><img src="templates/magento/images/infobox/content_top_right.gif" border="0" alt=""></td>
+  </tr></table></td>
+	          				</tr><tr style="">
+	          							<td width="100%" align="center" style="border-right: solid 1px #D3D3D3; padding-right: 10px; border-left: solid 1px #D3D3D3; padding-left: 10px;">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="contentBox">
+  <tr>
+<td class="BoxBorderLeft"></td><td><tr style="">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="4" class="contentBoxContents">
+  <tr>
+    <td align="center" width="20%" valign="top"><a href="http://ca.binnacle.com/p3469/TREM-TETHER-ELASTIC-3FT.-TO-6FT./product_info.html"><img src="images/productimages/thumbs/36436.jpg" border="0" alt="TREM TETHER - ELASTIC 3FT. TO 6FT." title=" TREM TETHER - ELASTIC 3FT. TO 6FT. " width="80" height="92" /></a><br><br style="line-height:10px;"><a href="http://ca.binnacle.com/p3469/TREM-TETHER-ELASTIC-3FT.-TO-6FT./product_info.html" class="amazon">TREM TETHER - ELASTIC 3FT. TO 6FT.</a><br><br style="line-height:3px;"><span class="specialprice">CAD$55.95&nbsp;</span><br><br style='line-height:4px;'><font color='#BDBDBD'><b>Not Rated</b></font></td>
+    <td align="center" width="20%" valign="top"><a href="http://ca.binnacle.com/p30/VICTORY-BRASS-BAROMETER-PORTHOLE-STYLE-4-1/2in.-DIAL/product_info.html"><img src="images/productimages/thumbs/10054.jpg" border="0" alt="VICTORY BRASS BAROMETER PORTHOLE STYLE 4-1/2in. DIAL" title=" VICTORY BRASS BAROMETER PORTHOLE STYLE 4-1/2in. DIAL " width="80" height="71" /></a><br><br style="line-height:10px;"><a href="http://ca.binnacle.com/p30/VICTORY-BRASS-BAROMETER-PORTHOLE-STYLE-4-1/2in.-DIAL/product_info.html" class="amazon">VICTORY BRASS BAROMETER PORTHOLE STYLE 4-1/2in. DIAL</a><br><br style="line-height:3px;"><span class="specialprice">&nbsp;<s>CAD$199.95</s>&nbsp;&nbsp;<span class="productSpecialPrice">CAD$179.95</span>&nbsp;</span><br><br style='line-height:4px;'><font color='#BDBDBD'><b>Not Rated</b></font></td>
+  </tr></table></td>
+	          				</tr></td><td class="BoxBorderRight"><img src="images/pixel_trans.gif" border="0" alt="" width="1" height="1" /></td>  </tr></table></td>
+	          				</tr><tr style="">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="contentBoxFooter">
+  <tr>
+    <td class="contentBoxFooterLeft"><img src="templates/magento/images/infobox/content_footer_left.gif" border="0" alt=""></td>
+    <td width="100%" class="contentBoxFooterCenter"><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /></td>
+    <td class="contentBoxFooterRight"><img src="templates/magento/images/infobox/content_footer_right.gif" border="0" alt=""></td>
+  </tr></table></td>
+	          				</tr>		
+          							</table><br>           </td>
+          </tr>
+<!-- also_purchased_products_eof //-->
+<!-- RCI [BOM] -productinfo-bottom : includes/runtime/productinfo/CDS_1showpages_productinfo_bottom.php -->
+<!-- RCI [EOM] -productinfo-bottom : includes/runtime/productinfo/CDS_1showpages_productinfo_bottom.php -->
+<!-- RCI [BOM] -productinfo-bottom : includes/runtime/productinfo/FDMS_productinfo_bottom.php -->
+<!-- RCI [EOM] -productinfo-bottom : includes/runtime/productinfo/FDMS_productinfo_bottom.php -->
+<!-- BOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+  	<tr>
+  		<td>
+  			<table border="0" width="100%" cellspacing="0" cellpadding="2">
+  				<tr>
+					<td class="main">
+						<b>Browse for more products in the same category as the VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL</b>					</td>
+				</tr>
+				<!-- BOF: Mayur added for HALIXO: MEGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+				<tr class="headerNavigation_1">
+			    	<td class="headerNavigation_1"><a href="http://ca.binnacle.com" class="headerNavigation_1">Home</a> &raquo; <a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts/c1/index.html" class="headerNavigation_1">Clocks Barometers &amp; Gifts</a> &raquo; <a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Nautical-Clocks/c1_4/index.html" class="headerNavigation_1">Nautical Clocks</a> &raquo; <a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Nautical-Clocks/c1_4/p29/VICTORY-BRASS-CLOCK-PORTHOLE-STYLE-4.5in.-DIAL/product_info.html" class="headerNavigation_1"><b>VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL</b></a></td>
+				</tr>
+				<!-- EOF: Mayur added for HALIXO: MEGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+				<!-- BOF: Gaurang added for HALIXO: SEARCH IMPROVEMENTS **BUGS/ENHANCEMENTS** -->
+								<!-- EOF: Gaurang added for HALIXO: SEARCH IMPROVEMENTS **BUGS/ENHANCEMENTS** -->
+  			</table>
+  		</td>
+  	</tr>
+<!-- EOF: Mayur added for HALIXO: PRODUCT INFO REDESIGN **BUGS/ENHANCEMENTS** -->
+
+<!-- BOF: Mayur added for HALIXO: PRODUCT TAGS -->
+	
+<tr>
+	<td>
+		<table border="0" width="100%" cellspacing="0" cellpadding="5">
+			<tr>
+				<td class="border_compare">
+					<table border="0" width="100%" cellspacing="0" cellpadding="2">
+						<tr>
+							<td align="left" class="all_tag_heading">
+								<!--BOF: Mayur added for HALIXO: PRODUCT TAGS **BUGS/ENHANCEMENTS**-->
+								Tags Customers Associate with VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL								<!--EOF: Mayur added for HALIXO: PRODUCT TAGS **BUGS/ENHANCEMENTS**-->
+							</td>
+						</tr>
+						<tr>
+							<td align="left" class="hr_line_top">
+								&nbsp;
+							</td>
+						</tr>
+						<!--<tr>
+							<td></td>
+						</tr>-->
+												<tr>
+							<!--BOF: Mayur added for HALIXO: PRODUCT TAGS **BUGS/ENHANCEMENTS**-->
+							<td class="main"><b>Add Your Tags (how would you describe the VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL in one or two words):</b></td>
+							<!--EOF: Mayur added for HALIXO: PRODUCT TAGS **BUGS/ENHANCEMENTS**-->
+						</tr>
+						<tr>
+							<td>
+								<table border="0" width="100%" cellspacing="0" cellpadding="2">
+									<tr>
+										<td align="left" width="20px"><img src="images/icon_tag_add.gif" border="0" alt="" width="16" height="16" /></td>
+										<td align="left" width="110px"><input type="text" name="product_tag_word" size="65"></td>
+										<td align="left"><a href="javascript:add_product_tag();"><nobr><span class="template-button-left"></span><span class="template-button-middle">Add Tags</span><span class="template-button-right"></span></nobr></a></td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td class="main">Use spaces to separate tags. Use single quotes (') for phrases.</td>
+										<!--BOF: Mayur added for HALIXO: PRODUCT TAGS **BUGS/ENHANCEMENTS**-->
+										<td class="main" align="right"><a href="http://ca.binnacle.com/all_tag_list.php"><img src="images/see-most-popular-tags.png" border="0" alt="" width="93" height="37" /></a></td>
+										<!--EOF: Mayur added for HALIXO: PRODUCT TAGS **BUGS/ENHANCEMENTS**-->
+									</tr>
+								</table>
+							</td>
+						</tr>
+    				</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<!-- EOF: Mayur added for HALIXO: PRODUCT TAGS -->
+
+</table>
+</form>
+<!-- RCI [BOM] -global-bottom : includes/runtime/global/CDS_CDpathSession_global_bottom.php -->
+<!-- RCI [EOM] -global-bottom : includes/runtime/global/CDS_CDpathSession_global_bottom.php -->
+<!-- RCI [BOM] -global-bottom : includes/runtime/global/CDS_navigation_global_bottom.php -->
+<!-- RCI [EOM] -global-bottom : includes/runtime/global/CDS_navigation_global_bottom.php -->
+<br><table style="border: 1px solid #b6b7cb" width="99%" align="center" cellpadding="0" >
+  													<tr bgcolor="#FFFFFF">
+         												<td nowrap colspan="8" class="pageHeading" valign="center"><img src="images/heading_history.gif" border="0" alt="" width="300" height="40" /></td>
+        											</tr>
+        											</table>
+
+        											<table border="0" width="99%" align="center" cellspacing="0" cellpadding="4" >
+        											<tr bgcolor="#BEDFFF">
+  														<td>&nbsp;</td>
+  														<td class="tableHeading" width="25%" valign="top" align="left"><a href="http://ca.binnacle.com/p29/VICTORY-BRASS-CLOCK-PORTHOLE-STYLE-4.5in.-DIAL/product_info.html?action=cp"><img src="images/erase.gif" border="0" alt="Erase My Recent History of Products" title="Erase My Recent History of Products"></a>&nbsp;Viewed Products<br><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="4" /><table cellpadding="2"><tr height="40px">
+      																			<td valign="top" align="center"><img src="images/productimages/thumbs/10053.jpg" border="0" alt="VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL" title=" VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL " width="80" height="72" /></td><td class="main" valign="top"><a href="http://ca.binnacle.com/p29/VICTORY-BRASS-CLOCK-PORTHOLE-STYLE-4.5in.-DIAL/product_info.html">VICTORY BRASS CLOCK PORTHOLE STYLE  4.5in. DIAL</a></td>
+      																		  </tr></table></td><td>&nbsp;</td>
+  														<td class="tableHeading" width="25%" valign="top" align="left"><a href="http://ca.binnacle.com/p29/VICTORY-BRASS-CLOCK-PORTHOLE-STYLE-4.5in.-DIAL/product_info.html?action=cc"><img src="images/erase.gif" border="0" alt="Erase My Recent History of Categories" title="Erase My Recent History of Categories"></a>&nbsp;Viewed Categories<br><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="4" /><table cellpadding="2" cellspacing="0"><tr>
+      																		<td valign="middle"><img src="images/ico_arrow.gif" border="0" alt="Category" title=" Category " width="9" height="9" /></td>
+      																		<td class="main"><a href="http://ca.binnacle.com/Sailboat-Hardware-Blocks-Ronstan-Blocks-Ronstan-Orbit-blocks-series-30/c28_425_124_551/index.html">Ronstan Blocks ~ Ronstan Orbit blocks series 30</a></td>
+      																	  </tr><tr>
+      																		<td valign="middle"><img src="images/ico_arrow.gif" border="0" alt="Category" title=" Category " width="9" height="9" /></td>
+      																		<td class="main"><a href="http://ca.binnacle.com/Sailboat-Hardware-Blocks-Ronstan-Blocks/c28_425_124/index.html">Blocks ~ Ronstan Blocks</a></td>
+      																	  </tr><tr>
+      																		<td valign="middle"><img src="images/ico_arrow.gif" border="0" alt="Category" title=" Category " width="9" height="9" /></td>
+      																		<td class="main"><a href="http://ca.binnacle.com/Sailboat-Hardware-Blocks-Harken-Blocks/c28_425_383/index.html">Blocks ~ Harken Blocks</a></td>
+      																	  </tr><tr>
+      																		<td valign="middle"><img src="images/ico_arrow.gif" border="0" alt="Category" title=" Category " width="9" height="9" /></td>
+      																		<td class="main"><a href="http://ca.binnacle.com/Sailboat-Hardware-Blocks/c28_425/index.html">Sailboat Hardware ~ Blocks</a></td>
+      																	  </tr><tr>
+      																		<td valign="middle"><img src="images/ico_arrow.gif" border="0" alt="Category" title=" Category " width="9" height="9" /></td>
+      																		<td class="main"><a href="http://ca.binnacle.com/Sailboat-Hardware/c28/index.html">Sailboat Hardware</a></td>
+      																	  </tr></table></td><td>&nbsp;</td>
+  														<td class="tableHeading" width="25%" valign="top" align="left"><a href="http://ca.binnacle.com/p29/VICTORY-BRASS-CLOCK-PORTHOLE-STYLE-4.5in.-DIAL/product_info.html?action=cs"><img src="images/erase.gif" border="0" alt="Erase My Recent History of Searches" title="Erase My Recent History of Searches"></a>&nbsp;Successful Searches<br><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="4" /><table cellpadding="2" cellspacing="0"></table></td><td width="25%" colspan="2" align="right" valign="top">
+           																<table width="100%" align="center" border="0">
+            																<tr>
+             																	<td align="left" class="main">Customers who bought products in Your Recent History also purchased our...<br><br style="line-height:5px;"><a href="http://ca.binnacle.com/p30/VICTORY-BRASS-BAROMETER-PORTHOLE-STYLE-4-1/2in.-DIAL/product_info.html"><img src="images/productimages/thumbs/10054.jpg" border="0" alt="VICTORY BRASS BAROMETER PORTHOLE STYLE 4-1/2in. DIAL" title=" VICTORY BRASS BAROMETER PORTHOLE STYLE 4-1/2in. DIAL " width="80" height="71" /><br><br style="line-height:5px;">VICTORY BRASS BAROMETER PORTHOLE STYLE 4-1/2in. DIAL</a><s>CAD$199.95</s><br><span class="productSpecialPrice">CAD$179.95</span>   </td>
+            																</tr>
+           																</table>
+          															  </td>          
+													</tr>
+													<tr bgcolor="#AACCFF">
+														<td>&nbsp;</td>
+         												<td nowrap colspan="6" class="pageHeading" valign="center" height="35"><a href="http://ca.binnacle.com/p29/VICTORY-BRASS-CLOCK-PORTHOLE-STYLE-4.5in.-DIAL/product_info.html?action=vs"><img src="images/btn_History_Off.gif" border="0" alt="Do not bother me with this history stuff" title="Do not bother me with this history stuff"></a></td>
+         												<td class="boxtext" align="right" height="35"><a href="http://ca.binnacle.com/p29/VICTORY-BRASS-CLOCK-PORTHOLE-STYLE-4.5in.-DIAL/product_info.html?action=vr"><img src="images/btn_History_ClearAll.gif" border="0" alt="Erase My Recent History" title="Erase My Recent History"></a></td>
+        											</tr>
+               									</table><div id="filter">&nbsp;</div>
+
+<table border="0" style="opacity: 0.99; display: none;" id="box" width="600">
+	<tr>
+		<td align="center">
+			<table border="0" cellpadding="3" cellspacing="0" width="580" align="center">
+				<tr>
+					<td colspan="2" width="100%" align="left" class="call_price_main_heading">
+						Ask a question about the <span id="boxtitle"></span><br><br style="line-height:0.5">					</td>
+				</tr>
+				
+				<tr>
+					<td valign="top" align="left">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" class="call_price_heading">
+									Province: <br><input type="text" name="comp_name" id="comp_name" size="50"> &nbsp;<span class="inputRequirement_red">*</span><br><br style="line-height:0.5">								</td>
+							</tr>
+							
+							<tr>
+								<td align="left" class="call_price_heading">
+									Your Name / Contact Person<br><input type="text" name="cust_name_pricing" id="cust_name_pricing" size="50"> &nbsp;<span class="inputRequirement_red">*</span><br><br style="line-height:0.5">								</td>
+							</tr>
+							
+							<tr>
+								<td align="left" class="call_price_heading">
+									Your Email<br><input type="text" name="cust_email" id="cust_email" size="50"> &nbsp;<span class="inputRequirement_red">*</span><br><br style="line-height:0.5">								</td>
+							</tr>
+							
+							<tr>
+								<td align="left" class="call_price_heading">
+									Your Phone<br><input type="text" name="cust_phone" id="cust_phone" size="50"> 								</td>
+							</tr>
+						</table>
+					</td>
+					
+					<td valign="top" align="right">
+						<span id="p_image"></span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" width="100%" align="left" class="call_price_heading">
+						<br style="line-height:0.5">Question/Message					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" width="100%" align="left" class="call_price_heading_text">
+						Briefly summarize your question, and any additional products or accessories you are interested in, or<br>what your needs are, and receive a reply from us within 24 hours during weekdays.<br><textarea name="brief_summarize" wrap="" cols="15" rows="6" id="brief_summarize"></textarea> &nbsp;<span class="inputRequirement_red">*</span>					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" width="100%" align="left" class="call_price_heading_text">
+						<input type="checkbox" name="email_request" id="email_request">&nbsp;&nbsp;Email me a copy of this request<br><br style="line-height:0.5">					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" align="left">
+						<img src="images/submit_price.gif" border="0" alt="Submit" title=" Submit " width="243" height="23" onclick="submit_price_form();" class="quantity_disc_hover" />&nbsp;&nbsp;&nbsp;<img src="images/cancel.gif" border="0" alt="Cancel" title=" Cancel " width="78" height="23" onclick="closebox();" class="quantity_disc_hover" />					</td>
+				</tr>
+							
+			</table>
+			<span id="p_id" style="display:none;"></span>
+		</td>
+	</tr>
+</table>
+
+
+<table border="0" style="opacity: 0.99; display: none;" id="box_success" width="600">
+	<tr>
+		<td align="center">
+			<table border="0" cellpadding="3" cellspacing="0" width="580">
+				<tr>
+					<td colspan="2" width="100%" align="left" class="call_price_main_heading">
+						Ask a question about the <span id="successboxtitle"></span><br><br style="line-height:0.5">					</td>
+				</tr>
+				
+				<tr>
+					<td valign="top" width="100%" align="left">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" class="call_price_heading">
+									Thank you <span id="customer_name"></span><br><br style="line-height:0.5">								</td>
+							</tr>
+							
+							<tr>
+								<td align="left" class="call_price_heading">
+									We will answer your question and send you details within 24 hours.								</td>
+							</tr>
+						</table>
+					</td>
+					
+					<td valign="top" align="left">
+						<span id="p_success_image"></span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" align="left">
+						<br style="line-height:0.5"><img src="images/close_price.gif" border="0" alt="Close" title=" Close " width="78" height="23" onclick="success_closebox();" class="quantity_disc_hover" />					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<!-- BOF: can't find -->
+<table border="0" style="opacity: 0.99; display: none;" id="inquiryBox" width="550">
+	<tr>
+		<td align="center">
+			<table border="0" cellpadding="3" cellspacing="0" width="100%" align="center">
+				<tr>
+					<td width="100%" align="left" class="call_price_main_heading">
+						Please fill out the following form for the items you are looking for:<br><br style="line-height:0.5">					</td>
+				</tr>
+				
+				<tr>
+					<td valign="top" align="left">
+						<table border="0" cellpadding="0" cellspacing="0" width="400">
+							<tr>
+								<td align="left" class="call_price_heading">
+									Your Name / Contact Person<br><input type="text" name="inquiry_custName" id="inquiry_custName" size="50"> &nbsp;<span class="inputRequirement_red">*</span><br><br style="line-height:0.5">								</td>
+							</tr>
+							
+							<tr>
+								<td align="left" class="call_price_heading">
+									Your Email<br><input type="text" name="inquiry_custEmail" id="inquiry_custEmail" size="50"> &nbsp;<span class="inputRequirement_red">*</span><br><br style="line-height:0.5">								</td>
+							</tr>
+							
+							<tr>
+								<td align="left" class="call_price_heading">
+									Your Phone<br><input type="text" name="inquiry_custPhone" id="inquiry_custPhone" size="50"> &nbsp;<span class="inputRequirement_red">*</span><br><br style="line-height:0.5">								</td>
+							</tr>
+							
+							<tr>
+								<td align="left" class="call_price_heading">
+									Message<br><textarea name="inquiry_summarize" wrap="" cols="15" rows="6" id="inquiry_summarize"></textarea> &nbsp;<span class="inputRequirement_red">*</span>								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="left">
+						<a href="javascript:void(0);" onclick="return submit_inquiry_form();" class="no_stylesheet"><nobr><span class="template-button-left"></span><span class="template-button-middle">Submit Inquiry Form</span><span class="template-button-right"></span></nobr></a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="return closeInquiryForm();" class="no_stylesheet"><nobr><span class="template-button-left"></span><span class="template-button-middle">Cancel</span><span class="template-button-right"></span></nobr></a>					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table border="0" style="opacity: 0.99; display: none;" id="inquiryForm_success" width="550">
+	<tr>
+		<td align="center">
+			<table border="0" cellpadding="3" cellspacing="0" width="100%">
+				<tr>
+					<td valign="top" width="100%" align="left">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" class="call_price_heading">
+									Thank you <span id="inquiryCustName"></span>,<br><br style="line-height:0.5">								</td>
+							</tr>
+							
+							<tr>
+								<td align="left" class="call_price_heading">
+									We will get back to you soon.								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="left">
+						<br style="line-height:0.5"><a href="javascript:void(0);" onclick="return close_success_inquiryForm();" class="no_stylesheet"><nobr><span class="template-button-left"></span><span class="template-button-middle">Close</span><span class="template-button-right"></span></nobr></a>					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- EOF: can't find -->
+
+<!-- BOF: Gaurang added for HALIXO: Feedback Tab -->
+<table border="0" style="opacity: 0.99; display: none;" id="feedBackBox" width="550">
+	<tr>
+		<td align="center">
+			<div id="yplightbox_container" class="feedback_content">
+				<a href="javascript:void(0);" onclick="return closeFeedbackForm();" class="no_stylesheet" id="yplightbox_close">close</a>
+				
+				<div id="yplightbox_content">
+					<div id="feedback_form">
+						<form id="feedbackForm" name="feedbackForm">
+							<div id="feedback_type_section">
+								<ul>
+									<li><a id="typeSection1" class="active_1 no_stylesheet" href="javascript:void(0);" onclick="setTypeSection('1','Describe your idea');"><b>Idea</b></a></li>
+									<li><a id="typeSection2" class="inactive no_stylesheet" href="javascript:void(0);" onclick="setTypeSection('2','Describe your question');"><b>Question</b></a></li>
+									<li><a id="typeSection3" class="inactive no_stylesheet" href="javascript:void(0);" onclick="setTypeSection('3','Describe your problem');"><b>Problem</b></a></li>
+									<li><a id="typeSection4" class="inactive no_stylesheet" href="javascript:void(0);" onclick="setTypeSection('4','Describe your praise');"><b>Praise</b></a></li>
+								</ul>
+							</div>
+							<div id="feedback_body_section">
+								<div id="errorExplanation" class="errorExplanation" style="display:none;">
+								</div>
+								
+								<div class="feedback_row">
+									<label for="feedback_description" id="feedbackDescLabelId">Describe your idea?</label>
+									<span class="required">*</span>
+									<textarea rows="20" name="feedback_description" id="feedback_description" cols="40"></textarea>
+								</div>
+								
+								<div class="feedback_row feedback_section">
+									<label for="feedback_title">Give a short summary</label>
+									<input type="text" size="30" name="feedbackTitle" id="feedbackTitle">
+								</div>
+								
+								<fieldset class="feedback_section">
+									<legend>Is it about one of these areas?</legend>
+									<ul>
+										<li>
+											<input type="checkbox" value="1" name="feedbackPageAffected" id="feedbackHomePageAffected">
+											<label for="feedbackHomePageAffected">Home page</label>
+										</li>
+										<li>
+											<input type="checkbox" value="2" name="feedbackPageAffected" id="feedbackSearchResultsAffected">
+											<label for="feedbackSearchResultsAffected">Search results</label>
+										</li>
+										<li>
+											<input type="checkbox" value="3" name="feedbackPageAffected" id="feedbackMoreInfoAffected">
+											<label for="feedbackMoreInfoAffected">Details page</label>
+										</li>
+									</ul>
+									<ul>
+										<li>
+											<input type="checkbox" value="4" name="feedbackPageAffected" id="feedbackCosmeticIssueAffected">
+											<label for="feedbackCosmeticIssueAffected">Cosmetic issue</label>
+										</li>
+										<li>
+											<input type="checkbox" value="5" name="feedbackPageAffected" id="feedbackDataIssueAffected">
+											<label for="feedbackDataIssueAffected">Data issue</label>
+										</li>
+										<li>
+											<input type="checkbox" value="6" name="feedbackPageAffected" id="feedbackNewsletterAffected">
+											<label for="feedbackNewsletterAffected">Email/Newsletter</label>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+							
+							<div id="feedback_submitter_section">
+								<div class="feedback_row">
+									<label for="feedback_email" id="feedbackEmailAddLabel">What is your email address?</label>
+									
+									<span class="required">*</span>
+									
+									<input type="text" size="30" name="feedbackEmail" id="feedbackEmail">
+								</div>
+								
+								<div class="feedback_row">
+									<label for="feedback_name">Tell us your name</label>
+									<input type="text" size="30" name="feedbackCustName" id="feedbackCustName">
+								</div>
+								
+								<fieldset class="feedback_section">
+									<legend>Are you a?<span class="required">*</span><span id="feedbackRoleErrorId" class="error" style="display:none;">please select one</span></legend>
+									<ul>
+										<li>
+											<input type="radio" value="Consumer" name="feedbackRole" id="roleConsumerId">
+											<label for="roleConsumerId">Consumer</label>
+										</li>
+										<li>
+											<input type="radio" value="Advertiser" name="feedbackRole" id="roleAdvertiserId">
+											<label for="roleAdvertiserId">Advertiser</label>
+										</li>
+									</ul>
+									<ul>
+										<li>
+											<input type="radio" value="Employee" name="feedbackRole" id="roleAtTEmployeeId">
+											<label for="roleAtTEmployeeId">Employee</label>
+										</li>
+										<li>
+											<input type="radio" value="Ad Solutions" name="feedbackRole" id="roleAdSolutionsId">
+											<label for="roleAdSolutionsId">Ad Solutions</label>
+										</li>
+									</ul>
+								</fieldset>
+								
+								<input type="button" value="Post Feedback" name="commit" id="submit" class="grey-button" onclick="return submit_FeedbackForm();">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<table border="0" style="opacity: 0.99; display: none;" id="feedbackForm_success" width="550">
+	<tr>
+		<td align="center">
+			<div id="yplightbox_container" class="feedback_content">
+				<a href="javascript:void(0);" onclick="return closeSuccessFeedbackForm();" class="no_stylesheet" id="yplightbox_close">close</a>
+				<div id="yplightbox_content">
+					<div id="feedback_thanks">
+						<h2>Thanks for your feedback</h2>
+						<p>Your feedback has been forwarded to Binnacle.com. Your feedback will be reviewed and considered carefully.<br>If your feedback requires a response, we expect to email you a reply within 24 hours (Monday to Friday).</p>
+						<input type="button" value="Close" onclick="return closeSuccessFeedbackForm();" id="dismiss">
+					</div>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+<!-- EOF: Gaurang added for HALIXO: Feedback Tab -->    </td>
+    <!-- content_eof //-->
+          <td width="194" valign="top" class="maincont_right_td">
+        <table border="0" width="194" cellspacing="0" cellpadding="0" class="rightbar_tb">
+        <!-- right_navigation //-->
+        <!-- shopping_cart //-->
+<script type="text/javascript"><!--
+function couponpopupWindow(url) {
+  window.open(url,'popupWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=450,height=280,screenX=150,screenY=150,top=150,left=150')
+}
+//--></script>
+<tr>
+  <td>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #C4C1BC;">
+          								<tr style="background-color:#FCFDFD;">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="Right_infoBoxHeading">
+  <tr>
+    <td align="left" class="Right_infoBoxHeadingLeft" style="vertical-align:top; border-bottom:1px solid #CCCCCC;">&nbsp;</td>
+    <td align="left" class="Right_infoBoxHeadingCenter" style="vertical-align:top; border-bottom:1px solid #CCCCCC;"><a href="http://ca.binnacle.com/shopping_cart.php"><b><font color="#e26703">Shopping Cart</font></b></a></td>
+    <td align="right" class="Right_infoBoxHeadingRight" style="vertical-align:top; border-bottom:1px solid #CCCCCC;"><a href="http://ca.binnacle.com/shopping_cart.php"><img src="templates/magento/images/infobox/top_right_arrow.gif" border="0"></a></td>
+  </tr></table></td>
+	          				</tr><tr style="background-color:#F8F7F5;">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="Right_infoBox">
+  <tr>
+<td class="BoxBorderLeft"></td><td><tr style="">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="6" class="Right_infoBoxContents">
+  <tr>
+  </tr>  <tr>
+    <td align="left" class="boxText" >0 items</td>
+  </tr>  <tr>
+  </tr></table></td>
+	          				</tr></td><td class="BoxBorderRight"><img src="images/pixel_trans.gif" border="0" alt="" width="1" height="1" /></td>  </tr></table></td>
+	          				</tr>		
+          							</table><br>  </td>
+</tr>
+<!-- shopping_cart_eof //-->
+<!-- BOF: Mayur added for HALIXO: INFOBOX AND COLUMN MANIPULATION -->
+<!-- EOF: Mayur added for HALIXO: INFOBOX AND COLUMN MANIPULATION -->    <!-- loginbox //--> 
+    <tr>
+      <td>
+        <table border="0" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #C4C1BC;">
+          								<tr style="background-color:#FCFDFD;">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="Right_infoBoxHeading">
+  <tr>
+    <td align="left" class="Right_infoBoxHeadingLeft" style="vertical-align:top; border-bottom:1px solid #CCCCCC;">&nbsp;</td>
+    <td align="left" class="Right_infoBoxHeadingCenter" style="vertical-align:top; border-bottom:1px solid #CCCCCC;"><font color="#e26703">Your Account</font></td>
+    <td align="right" class="Right_infoBoxHeadingRight" style="vertical-align:top; border-bottom:1px solid #CCCCCC;">&nbsp;</td>
+  </tr></table></td>
+	          				</tr><tr style="background-color:#F8F7F5;">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="Right_infoBox">
+  <tr>
+<td class="BoxBorderLeft"></td><td><tr style="">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="6" class="Right_infoBoxContents">
+  <tr>
+  </tr>  <tr>
+    <td align="center" class="boxText" >
+        <form name="login" method="post" action="https://ca.binnacle.com/login.php?action=process">
+          <table border="0" width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="left" class="infoboxContents">
+                Your Email Address
+              </td>
+            </tr>
+            <tr>
+              <td align="left" class="infoboxContents">
+                <input type="text" name="email_address" maxlength="96" size="20" value="">
+              </td>
+            </tr>
+            <tr>
+              <td align="left" class="infoboxContents">
+                Your Password
+              </td>
+            </tr>
+            <tr>
+              <td align="left" class="infoboxContents">
+                <input type="password" name="password" maxlength="40" size="20" value="">
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="5" />
+              </td>
+            </tr>
+          </table>
+        </td>
+  </tr>  <tr>
+  </tr></table></td>
+	          				</tr></td><td class="BoxBorderRight"><img src="images/pixel_trans.gif" border="0" alt="" width="1" height="1" /></td>  </tr></table></td>
+	          				</tr><tr style="background-color:#DEE5E8;">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="Right_infoBoxFooter">
+  <tr>
+    <td class="Right_infoBoxFooterLeft">&nbsp;</td>
+    <td align="center" class="Right_infoBoxFooterCenter">    <nobr><span class="template-button-left">&nbsp;</span><span class="template-button-middle"><input class="submitButton" type="submit" value="Sign In" /></span><span class="template-button-right">&nbsp;</span></nobr></td>
+    <td class="Right_infoBoxFooterRight">&nbsp;</td>
+  </tr></table></form></td>
+	          				</tr>		
+          							</table><br>      </td>
+    </tr>
+    <!-- loginbox eof//-->
+    	<tr>
+		<td>
+		<table border="0" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #C4C1BC;">
+          								<tr style="background-color:#FCFDFD;">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="Right_infoBoxHeading">
+  <tr>
+    <td align="left" class="Right_infoBoxHeadingLeft" style="vertical-align:top; border-bottom:1px solid #CCCCCC;"><img src="templates/magento/images/infobox/icon_compare.gif" border="0" alt="" width="16" height="16" style="padding-left:5px;"></td>
+    <td align="left" class="Right_infoBoxHeadingCenter" style="vertical-align:top; border-bottom:1px solid #CCCCCC;"><font color="#e26703">Compare Products<span id="no_cmp_products"></span></font></td>
+    <td align="right" class="Right_infoBoxHeadingRight" style="vertical-align:top; border-bottom:1px solid #CCCCCC;">&nbsp;</td>
+  </tr></table></td>
+	          				</tr><tr style="background-color:#F8F7F5;">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="Right_infoBox">
+  <tr>
+<td class="BoxBorderLeft"></td><td><tr style="">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="6" class="Right_infoBoxContents">
+  <tr>
+  </tr>  <tr>
+    <td align="center" class="boxText" >
+			<table border="0" width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+	      			<td>
+	      				<table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td><div id="data_compare_products"></div></td></tr>
+	      				</table>
+	      			</td>
+	      		</tr>
+			</table></td>
+  </tr>  <tr>
+  </tr></table></td>
+	          				</tr></td><td class="BoxBorderRight"><img src="images/pixel_trans.gif" border="0" alt="" width="1" height="1" /></td>  </tr></table></td>
+	          				</tr><tr style="background-color:#DEE5E8;">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="Right_infoBoxFooter">
+  <tr>
+    <td class="Right_infoBoxFooterLeft">&nbsp;</td>
+    <td align="left" class="Right_infoBoxFooterCenter"><span id="compare_prod_footer"></span></td>
+    <td class="Right_infoBoxFooterRight">&nbsp;</td>
+  </tr></table></td>
+	          				</tr>		
+          							</table><br>		</td>
+	</tr>
+<!-- EOF: Gaurang added for HALIXO: COMPARE PRODUCTS **BUGS/ENHANCEMENTS** --><!-- EOF: Salah added for HALIXO: INFOBOX AND COLUMN MANIPULATION -->  <!-- categories4 //-->
+  <tr>
+    <td>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #C4C1BC;">
+          								<tr style="background-color:#FCFDFD;">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="Right_infoBoxHeading">
+  <tr>
+    <td align="left" class="Right_infoBoxHeadingLeft" style="vertical-align:top; border-bottom:1px solid #CCCCCC;">&nbsp;</td>
+    <td align="left" class="Right_infoBoxHeadingCenter" style="vertical-align:top; border-bottom:1px solid #CCCCCC;"><font color="#e26703">Categories</font></td>
+    <td align="right" class="Right_infoBoxHeadingRight" style="vertical-align:top; border-bottom:1px solid #CCCCCC;">&nbsp;</td>
+  </tr></table></td>
+	          				</tr><tr style="background-color:#F8F7F5;">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="0" class="Right_infoBox">
+  <tr>
+<td class="BoxBorderLeft"></td><td><tr style="">
+	          							<td width="100%" align="center" style="">
+	          								<table border="0" width="100%" cellspacing="0" cellpadding="6" class="Right_infoBoxContents">
+  <tr>
+  </tr>  <tr>
+    <td align="left" class="boxText" ><a href="http://ca.binnacle.com/BBQ-Stoves-and-Heaters/c7/index.html"><b>BBQ Stoves and Heaters</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Books-Calendars/c61/index.html"><b>Books | Calendars</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Cabin-Hardware/c180/index.html"><b>Cabin Hardware</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Charts-and-Publications/c67/index.html"><b>Charts and Publications</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts/c1/index.html"><b>Clocks Barometers &amp; Gifts</b><b>-&gt; </b></a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Barometers/c1_5/index.html">Barometers</a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Nautical-Clocks/c1_4/index.html"><b><font color='#ff0000'>Nautical Clocks</font></b></a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Tide-Clocks/c1_3/index.html">Tide Clocks</a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Bells/c1_6/index.html">Bells</a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Brass-Gifts/c1_11/index.html">Brass Gifts</a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Brass-Plaques-&-Signs/c1_217/index.html">Brass Plaques &amp; Signs</a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Combination-Units/c1_25/index.html">Combination Units</a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Nauticalia-Gifts/c1_17/index.html">Nauticalia Gifts</a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Gifts-under-$200/c1_408/index.html">Gifts under $200</a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Gifts-under-$100/c1_407/index.html">Gifts under $100</a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Gifts-under-$50/c1_406/index.html">Gifts under $50</a><br><font color='#ff0000'>|__</font><a href="http://ca.binnacle.com/Clocks-Barometers-&-Gifts-Chelsea-Bases/c1_2/index.html">Chelsea Bases</a><br><hr><a href="http://ca.binnacle.com/Clothing-and-Footwear/c15/index.html"><b>Clothing and Footwear</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Deck-Hardware/c117/index.html"><b>Deck Hardware</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Docking-and-Mooring/c33/index.html"><b>Docking and Mooring</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Electrical/c58/index.html"><b>Electrical</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Electronics/c12/index.html"><b>Electronics</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Gift-cards/c452/index.html"><b>Gift cards</b></a><br><hr><a href="http://ca.binnacle.com/Lights/c23/index.html"><b>Lights</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Maintenance/c50/index.html"><b>Maintenance</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Navigation/c9/index.html"><b>Navigation</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/One-Design/c496/index.html"><b>One Design</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Plumbing-&-Pumps/c31/index.html"><b>Plumbing &amp; Pumps</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Rigging/c409/index.html"><b>Rigging</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Rope/c26/index.html"><b>Rope</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Safety/c39/index.html"><b>Safety</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Sailboat-Hardware/c28/index.html"><b>Sailboat Hardware</b><b>-&gt; </b></a><br><hr><a href="http://ca.binnacle.com/Ventilation/c199/index.html"><b>Ventilation</b><b>-&gt; </b></a><br></td>
+  </tr>  <tr>
+  </tr></table></td>
+	          				</tr></td><td class="BoxBorderRight"><img src="images/pixel_trans.gif" border="0" alt="" width="1" height="1" /></td>  </tr></table></td>
+	          				</tr>		
+          							</table><br>     </td>
+   </tr>
+  <!-- categories4_eof //-->
+  <!-- BOF: Mayur added for HALIXO: INFOBOX AND COLUMN MANIPULATION -->
+<!-- EOF: Mayur added for HALIXO: INFOBOX AND COLUMN MANIPULATION --> 
+    <!-- wishlist //--> 
+    <tr>
+      <td>
+              </td>
+    </tr>
+    <!-- wishlist eof//-->        
+        <!-- BOF: FACEBEOOK INFOBOX -->
+	<tr>
+    <td align="center" class="boxText" >
+<!-- Facebook Badge START --><a href="http://www.facebook.com/binnacle.marine" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="The Binnacle">The Binnacle</a><br/><a href="http://www.facebook.com/binnacle.marine" target="_TOP" title="The Binnacle"><img src="https://badge.facebook.com/badge/118971811942.2122.1788316389.png" style="border: 0px;" /></a><br/><!-- Facebook Badge END -->
+ 	 	</td>
+  </tr>  
+        <!-- EOF: FACEBOOK INFOBOX -->
+        
+        <!-- right_navigation_eof //-->
+      </table></td>
+      
+        </tr>
+  <tr>
+    <td><img src="images/pixel_trans.gif" border="0" alt="" width="1" height="5" /></td>
+  </tr>
+</table>
+<!-- body_eof //-->
+
+<!-- BOF: Mayur added for HALIXO: GENERAL BUGS: CONTINUE SHOPPING BUTTON -->
+<!-- EOF: Mayur added for HALIXO: GENERAL BUGS: CONTINUE SHOPPING BUTTON -->
+
+<!-- footer //-->
+<!-- RCI [BOM] -footer-top : includes/runtime/footer/sss_footer_top.php -->
+<!-- RCI [EOM] -footer-top : includes/runtime/footer/sss_footer_top.php -->
+  </td>
+  </tr></table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">   
+  	<tr>
+    	<td class="footer-container"><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="10" /></td>
+	</tr>
+    <tr class="left_right_bgcolor">
+    	<td>
+        	<table align="center" width="950" border="0" cellspacing="0" cellpadding="2">
+          		<tr>
+          			<!-- BOF: Gaurang added for HALIXO: MAGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+          			<!--<td width="197" valign="top" class="template-image"></td>-->
+          			<!-- EOF: Gaurang added for HALIXO: MAGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+            		<td colspan="4" align="center" valign="middle" class="template-image">
+            			<!--<font color="#ffffff">-->
+              				<a href="https://ca.binnacle.com/index.php" class="font-color">Home</a> |
+              				                					<a href="https://ca.binnacle.com/login.php" class="font-color">Login</a> | 
+                			              				<a href="https://ca.binnacle.com/specials.php" class="font-color">Specials</a> |  
+              				<a href="https://ca.binnacle.com/shopping_cart.php" class="font-color">Shopping Cart</a> | 
+              				<a href="https://ca.binnacle.com/checkout_shipping.php" class="font-color">Checkout</a> | 
+			              	<a href="https://ca.binnacle.com/contact_us.php" class="font-color">Contact us</a> |
+			              	<a href="https://ca.binnacle.com/pages.php?pID=2" class="font-color">Terms</a> | 
+			              	<a href="https://ca.binnacle.com/pages.php?pID=2" class="font-color">Privacy Notice</a> | 
+			              	<a href="https://ca.binnacle.com/pages.php?pID=4" class="font-color">Shipping</a>  
+			              	<br /><br />
+        					<!-- BOF: Mayur added for HALIXO: MEGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+        					        					<!-- EOF: Mayur added for HALIXO: MEGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+						<!--</font>-->            		</td>
+            	</tr>
+    <tr>
+    				<!-- BOF: Gaurang added for HALIXO: MAGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+    				<td height="50px" colspan="4" align="center" class="template-image">
+Copyright &copy; 2013</td>
+    			</tr>    
+    			<tr>
+    				<!-- BOF: Gaurang added for HALIXO: MAGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+    				<td height="50px" colspan="4" align="center" class="template-image">
+                    <a href="https://ca.binnacle.com/specials.php" class="font-color">Specials</a> |  
+              				<a href="https://ca.binnacle.com/shopping_cart.php" class="font-color">Shopping Cart</a></td>
+    				<!-- EOF: Gaurang added for HALIXO: MAGENTO TEMPLATE DESIGN **BUGS/ENHANCEMENTS** -->
+    			</tr>
+          
+          <!-- BOF: Industry Logos -->          
+          <tr>
+            <td align="center" valign="middle" class="template-image"><a href="http://www.abycinc.org/" target="_new"><img src="../images/ABYC-logo.jpg" alt="The American Boat and Yacht Council" border="0"  /></a></td>        	      	
+            <td align="center" valign="middle" class="template-image"><a href="http://www.boatinginatlanticcanada.com/" target="_new"><img src="../images/Amta-logo.jpg" alt="Atlantic Marine Trades Association" border="0"  /></a></td>
+            <td align="center" valign="middle" class="template-image"><a href="http://www.nmea.org/" target="_new"><img src="../images/Nmea-logo.jpg" alt="NMEA National Marine Electronics Association" border="0"  /></a></td>
+          </tr>             
+          <!-- EOF: Industry Logos -->
+			</table>
+     	</td>
+      	
+      	
+	</tr>    
+</table>
+
+              				
+  <!-- footer_eof //-->
+<!--BOF: Mayur added for HALIXO: WEB PERFORMANCE OPTIMIZATION: YSLOW RECOMMENDATIONS-->
+<script type="text/javascript" src="min/g=commonjs"></script>
+<script type="text/javascript">
+	var CONFIG_TELEPHONE_MIN_LENGTH = 10 ;
+</script>
+<script language="JavaScript" type="text/javascript">
+function popup_compare_admin(ids)
+{
+	var http = 'http://ca.binnacle.com/';
+	var temp_oscid = '';
+		window.open(http+"pop_up_compare.php?ids="+ids+temp_oscid,"compare_window","toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=yes, width=800, height=600");
+}
+</script>
+  <!--<script type="text/javascript" src="min/g=productinfotabjs"></script>-->
+<script type="text/javascript">
+	add_compare_ajax('','');
+</script>
+<!--EOF: Mayur added for HALIXO: WEB PERFORMANCE OPTIMIZATION: YSLOW RECOMMENDATIONS-->
+<!-- RCI [BOM] -global-footer : includes/runtime/global/GA_global_footer.php -->
+<!-- Google Analytics RCI start -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1103835-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<!-- Google Analytics RCI end -->
+<!-- RCI [EOM] -global-footer : includes/runtime/global/GA_global_footer.php -->
+<!-- BOF: Gaurang added for HALIXO: Feedback Tab -->
+<div id="feedback_link"><a href="javascript:void(0);" onClick="ajaxFeedbackForm(event, 'Describe your idea');"><img src="templates/magento/images/feedback.jpg" border="0" alt="" width="20" height="96" /></a></div>
+<!-- EOF: Gaurang added for HALIXO: Feedback Tab -->
+</body>
+</html>
